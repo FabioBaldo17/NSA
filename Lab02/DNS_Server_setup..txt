@@ -1,0 +1,157 @@
+
+user@dns:/$ sudo service bind9 restart
+user@dns:/$ sudo service bind9 status
+● named.service - BIND Domain Name Server
+     Loaded: loaded (/lib/systemd/system/named.service; enabled; vendor preset: enabled)
+     Active: active (running) since Mon 2020-11-02 22:52:11 CET; 2s ago
+       Docs: man:named(8)
+   Main PID: 2155 (named)
+      Tasks: 5 (limit: 2282)
+     Memory: 12.4M
+     CGroup: /system.slice/named.service
+             └─2155 /usr/sbin/named -f -u bind
+
+Nov 02 22:52:12 dns named[2155]: network unreachable resolving './DNSKEY/IN': 2001:dc3::35#53
+Nov 02 22:52:12 dns named[2155]: network unreachable resolving './NS/IN': 2001:dc3::35#53
+Nov 02 22:52:12 dns named[2155]: network unreachable resolving './DNSKEY/IN': 2001:500:2f::f#53
+Nov 02 22:52:12 dns named[2155]: network unreachable resolving './NS/IN': 2001:500:2f::f#53
+Nov 02 22:52:12 dns named[2155]: network unreachable resolving './DNSKEY/IN': 2001:7fd::1#53
+Nov 02 22:52:12 dns named[2155]: network unreachable resolving './NS/IN': 2001:7fd::1#53
+Nov 02 22:52:12 dns named[2155]: network unreachable resolving './DNSKEY/IN': 2001:500:12::d0d#53
+Nov 02 22:52:12 dns named[2155]: network unreachable resolving './NS/IN': 2001:500:12::d0d#53
+Nov 02 22:52:12 dns named[2155]: managed-keys-zone: Key 20326 for zone . is now trusted (acceptance timer complete)
+Nov 02 22:52:12 dns named[2155]: resolver priming query complete
+
+/etc/
+	├── bind
+	│   ├── bind.keys
+	│   ├── db.0
+	│   ├── db.127
+	│   ├── db.255
+	│   ├── db.empty
+	│   ├── db.local
+	│   ├── named.conf
+	│   ├── named.conf.default-zones
+	│   ├── named.conf.local
+	│   ├── named.conf.options
+	│   ├── rndc.key
+	│   ├── zones
+	│   │   ├── master
+	│   │   └── slave
+	│   └── zones.rfc1918
+	
+--> After the confiuration  of the server
+	
+user@dns:/$ sudo rndc status
+version: BIND 9.16.1-Ubuntu (Stable Release) <id:d497c32> (it's a secret)
+running on dns: Linux x86_64 5.4.0-48-generic #52-Ubuntu SMP Thu Sep 10 10:58:49 UTC 2020
+boot time: Mon, 02 Nov 2020 21:52:11 GMT
+last configured: Mon, 02 Nov 2020 23:23:03 GMT
+configuration file: /etc/bind/named.conf
+CPUs found: 1
+worker threads: 1
+UDP listeners per interface: 1
+number of zones: 104 (97 automatic)
+debug level: 0
+xfers running: 0
+xfers deferred: 0
+soa queries in progress: 0
+query logging is OFF
+recursive clients: 0/900/1000
+tcp clients: 0/150
+TCP high-water: 0
+server is up and running
+
+--> ON KALI: before changin the DNS server
+
+kali@kali:~$ dig +trace google.com
+
+; <<>> DiG 9.16.4-Debian <<>> +trace google.com
+;; global options: +cmd
+.                       5       IN      NS      d.root-servers.net.
+.                       5       IN      NS      m.root-servers.net.
+.                       5       IN      NS      h.root-servers.net.
+.                       5       IN      NS      g.root-servers.net.
+.                       5       IN      NS      e.root-servers.net.
+.                       5       IN      NS      f.root-servers.net.
+.                       5       IN      NS      i.root-servers.net.
+.                       5       IN      NS      b.root-servers.net.
+.                       5       IN      NS      k.root-servers.net.
+.                       5       IN      NS      j.root-servers.net.
+.                       5       IN      NS      c.root-servers.net.
+.                       5       IN      NS      a.root-servers.net.
+.                       5       IN      NS      l.root-servers.net.
+;; Received 262 bytes from 172.16.155.2#53(172.16.155.2) in 59 ms
+
+com.                    172800  IN      NS      f.gtld-servers.net.
+com.                    172800  IN      NS      k.gtld-servers.net.
+com.                    172800  IN      NS      c.gtld-servers.net.
+com.                    172800  IN      NS      m.gtld-servers.net.
+com.                    172800  IN      NS      g.gtld-servers.net.
+com.                    172800  IN      NS      e.gtld-servers.net.
+com.                    172800  IN      NS      h.gtld-servers.net.
+com.                    172800  IN      NS      a.gtld-servers.net.
+com.                    172800  IN      NS      j.gtld-servers.net.
+com.                    172800  IN      NS      b.gtld-servers.net.
+com.                    172800  IN      NS      d.gtld-servers.net.
+com.                    172800  IN      NS      l.gtld-servers.net.
+com.                    172800  IN      NS      i.gtld-servers.net.
+com.                    86400   IN      DS      30909 8 2 E2D3C916F6DEEAC73294E8268FB5885044A833FC5459588F4A9184CF C41A5766
+com.                    86400   IN      RRSIG   DS 8 1 86400 20201116050000 20201103040000 26116 . 5PO9gZ/TOmMmKm0FIdhA63JSd5//XavyrQ76qHEWs07+Hu6wqr57xqNR zqtpFzJ0Q8TCpYgTKogrMRSY1mgBmBbziY0T20sY2de6p6NEmmz0A6E3 k+P747AFKUenRyJ1UU8I/ODR30XLj1aKL6a96obVK3YKtSCSk9QHGV9K CqcqkoC1o5s65wavoGIV5LgObNResdsYyo2JGPGWNbLEU61fRjvB0qmR +NGxkNAxN953dwxvCVE8JtCfpre4v3hUhHwtz7ibZpdvUNwSbYUXiGUo PaDKQLboB6/gl+S64fnfa5hqIlo4kxz27vuxtwO0CmjB+Pt6beNc3flj zWo5mQ==
+;; Received 1198 bytes from 199.9.14.201#53(b.root-servers.net) in 83 ms
+
+google.com.             172800  IN      NS      ns2.google.com.
+google.com.             172800  IN      NS      ns1.google.com.
+google.com.             172800  IN      NS      ns3.google.com.
+google.com.             172800  IN      NS      ns4.google.com.
+CK0POJMG874LJREF7EFN8430QVIT8BSM.com. 86400 IN NSEC3 1 1 0 - CK0Q1GIN43N1ARRC9OSM6QPQR81H5M9A NS SOA RRSIG DNSKEY NSEC3PARAM
+CK0POJMG874LJREF7EFN8430QVIT8BSM.com. 86400 IN RRSIG NSEC3 8 2 86400 20201109054042 20201102043042 31510 com. AQ/C247BFFWm7+G8mOcyTBflc19nk/0ymEf+tlKfkW8Mx1YE+7I5OobP BXAqpm6jvHsVH1zYH4JGZxrWdqbgrJeb8jKK21iUJrz+SXHRabY8LSlv y8xfz2UZeHB4EcBFWm17C1JarZv8+rBNMVqZJ39cofhjDSTguCxrn4Zr e69TaLxNLhfGZ3Vgon2hv3dGg91/CQcjzeu3XCda6pR3Aw==
+S84BDVKNH5AGDSI7F5J0O3NPRHU0G7JQ.com. 86400 IN NSEC3 1 1 0 - S84CDVS9VPREADFD6KK7PDADH0M6IO8H NS DS RRSIG
+S84BDVKNH5AGDSI7F5J0O3NPRHU0G7JQ.com. 86400 IN RRSIG NSEC3 8 2 86400 20201110053507 20201103042507 31510 com. B+HAUjQO46lnPA+xspL55u/UkmsKQwPh1OatpLtXNqdgwQ0TqnbzW1cr 5DahidySjymKrUMw3uZ/hSXidRDK/Xpn+Sxd0mVj/bgfKyst52BAfkSw zqUFFT0h0cT9U2qMMGKjmQHCEoRXeIeLLw/l7yCBlIXApZwYffK6AWog Bmujnweo/kegT1esAR+66N8XrVy1fwcqoqw8NaBUn0BdDg==
+;; Received 836 bytes from 192.54.112.30#53(h.gtld-servers.net) in 75 ms
+
+google.com.             300     IN      A       216.58.206.46
+;; Received 55 bytes from 216.239.34.10#53(ns2.google.com) in 91 ms
+
+
+#############################################
+
+
+POPOS->test the dns connection
+
+fabio@fabio-popOs:~$ nslookup google.com 86.119.31.49
+Server:		86.119.31.49
+Address:	86.119.31.49#53
+
+Non-authoritative answer:
+Name:	google.com
+Address: 172.217.168.14
+Name:	google.com
+Address: 2a00:1450:400a:801::200e
+
+
+DNS -> spoofing
+
+fabio@fabio-popOs:~$ nslookup www.google.com
+Server:		86.119.31.49
+Address:	86.119.31.49#53
+
+Name:	www.google.com
+Address: 192.168.1.242
+Name:	www.google.com
+Address: 2a00:1450:400a:801::2004
+
+#############################################
+
+Activating dns_spoof plugin...
+Host 192.168.1.243 added to TARGET1
+Host 192.168.1.1 added to TARGET2
+Starting Unified sniffing...
+
+dns_spoof: A [www.google.com] spoofed to [192.168.1.242] TTL [3600 s]
+dns_spoof: A [www.google.com] spoofed to [192.168.1.242] TTL [3600 s]
+dns_spoof: A [www.google.com] spoofed to [192.168.1.242] TTL [3600 s]
+dns_spoof: A [www.google.com] spoofed to [192.168.1.242] TTL [3600 s]
+dns_spoof: A [www.google.com] spoofed to [192.168.1.242] TTL [3600 s]
+
+

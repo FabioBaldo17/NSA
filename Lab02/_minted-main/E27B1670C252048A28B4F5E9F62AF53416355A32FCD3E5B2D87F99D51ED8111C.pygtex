@@ -1,0 +1,21 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+user@dns:/etc/bind/zones/master\PYGZdl{} sudo rndc status
+version: BIND 9.16.1\PYGZhy{}Ubuntu (Stable Release) \PYGZlt{}id:d497c32\PYGZgt{} (it\PYGZsq{}s a secret)
+running on dns: Linux x86\PYGZus{}64 5.4.0\PYGZhy{}52\PYGZhy{}generic \PYGZsh{}57\PYGZhy{}Ubuntu SMP Thu Oct 15 10:57:00 UTC 2020
+boot time: Thu, 05 Nov 2020 20:22:08 GMT
+last configured: Thu, 05 Nov 2020 20:22:08 GMT
+configuration file: /etc/bind/named.conf
+CPUs found: 1
+worker threads: 1
+UDP listeners per interface: 1
+number of zones: 104 (97 automatic)
+debug level: 0
+xfers running: 0
+xfers deferred: 0
+soa queries in progress: 0
+query logging is OFF
+recursive clients: 0/900/1000
+tcp clients: 0/150
+TCP high\PYGZhy{}water: 1
+server is up and running
+\end{Verbatim}

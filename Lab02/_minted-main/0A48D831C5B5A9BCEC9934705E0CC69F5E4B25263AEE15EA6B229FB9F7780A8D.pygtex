@@ -1,0 +1,13 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+options \PYGZob{}
+
+	dnssec\PYGZhy{}validation auto;
+
+	listen\PYGZhy{}on\PYGZhy{}v6 \PYGZob{} any; \PYGZcb{};
+	directory \PYGZdq{}/var/cache/bind\PYGZdq{};
+        allow\PYGZhy{}recursion \PYGZob{} localhost; 5.90.153.238; \PYGZcb{};
+        version \PYGZdq{}it\PYGZsq{}s a secret\PYGZdq{};
+        dump\PYGZhy{}file \PYGZdq{}/var/cache/bind/dump.db\PYGZdq{};
+        masterfile\PYGZhy{}format text;
+\PYGZcb{};
+\end{Verbatim}

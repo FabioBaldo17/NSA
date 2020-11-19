@@ -1,0 +1,13 @@
+user@hacker:~$ netwox 105 --help
+Title: Sniff and send DNS answers
+Usage: netwox 105 -h hostname -H ip -a hostname -A ip [-d device]
+Parameters:
+ -h|--hostname hostname         hostname {www.example.com}
+ -H|--hostnameip ip             hostname IP {1.2.3.4}
+ -a|--authns hostname           authoritative name server {ns.example.com}
+ -A|--authnsip ip               authns IP {1.2.3.5}
+ -d|--device device             device name {Eth0}
+ --help2                        display help for advanced parameters
+Example: netwox 105 -h "www.example.com" -H "1.2.3.4" -a "ns.example.com" -A "1.2.3.5"
+Example: netwox 105 --hostname "www.example.com" --hostnameip "1.2.3.4" --authns "ns.example.com" --authnsip "1.2.3.5"
+

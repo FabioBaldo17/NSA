@@ -1,0 +1,15 @@
+user@dns:/etc/bind/zones/master$ sudo service bind9 status
+named.service - BIND Domain Name Server
+     Loaded: loaded (/lib/systemd/system/named.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2020-11-05 21:22:08 CET; 1min 18s ago
+       Docs: man:named(8)
+   Main PID: 3520 (named)
+      Tasks: 5 (limit: 2282)
+     Memory: 13.4M
+     CGroup: /system.slice/named.service
+             |-3520 /usr/sbin/named -f -u bind
+
+Nov 05 21:22:08 dns named[3520]: managed-keys-zone: Key 20326 for zone . is now trusted (acceptance timer complete)
+Nov 05 21:22:08 dns named[3520]: resolver priming query complete
+Nov 05 21:22:09 dns named[3520]: client @0x7f86780245a0 160.98.47.74#48519 (g2.nsa.itsec-lab.ch): transfer of 'g2.nsa.itsec-lab.ch/IN': AXFR started (serial 2018103001)
+Nov 05 21:22:09 dns named[3520]: client @0x7f86780245a0 160.98.47.74#48519 (g2.nsa.itsec-lab.ch): transfer of 'g2.nsa.itsec-lab.ch/IN': AXFR ended: 1 messages, 7 records, 250 bytes, 0.001 secs (250000 bytes/sec)

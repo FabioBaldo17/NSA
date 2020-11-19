@@ -1,0 +1,8 @@
+zone "g2.nsa.itsec-lab.ch" IN {
+	type master;
+	file "/etc/bind/zones/master/db.g2.nsa.itsec-lab.ch.zone";
+	allow-update { none; };
+	allow-transfer { 160.98.47.74;};
+	notify yes;
+};
+

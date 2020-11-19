@@ -1,0 +1,26 @@
+sudo dig @localhost DNSKEY g2.nsa.itsec-lab.ch +dnssec
+
+; <<>> DiG 9.16.1-Ubuntu <<>> @localhost DNSKEY g2.nsa.itsec-lab.ch +dnssec
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 48307
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 4, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 4096
+; COOKIE: 743b9ee4065d858b010000005fb6e6ffe792947f66ad69b4 (good)
+;; QUESTION SECTION:
+;g2.nsa.itsec-lab.ch.		IN	DNSKEY
+
+;; ANSWER SECTION:
+g2.nsa.itsec-lab.ch.	2592000	IN	DNSKEY	257 3 8 AwEAAalUg9bFq+RCmi1COYXKbzIdlolTIZsV1yvQCG1Q+pGtatHTXQuJ AeCdyWckuP6FJtZUoXpsgtGXi6hfHtgmYhHQ9hIBH3pFYIc95u8nIanr iTx26wJy9KwYa553DhpX5OhmKZfBg5TRtDi1V4VDbe84KWgDxgDpyr0H XmzfZYyab18OFWRPnAebvDnEE8jeXC2seWtzDwBxWzYRnZik4mHAdm8g 1T7/v/qQ0ZPQ9pwgCGsLZZUPT9R587lEsXBMNp+fpDBEmX0X4iofETvI iy9POGFZ/c2NBTZNLvuw9VCAw168Ht8eQRpc9lyAAGVFSCsGi+V3g0si g0Sv/12jK+Ots1WYSJ/cFkd3kXRctbd7Rmh7TwK1nDBObUeRDchP5iVV 36pM7+v9IKZgbPUeLuX9o6/yynrTjIRU+4xWvggAuiYNLluYYn8zZ39B pNIoKmCeM/Doas8r+Fz7wfMUNMmV0lUPkmm2C9gFXpEDcrY60UfI2mvw XLuLSUTVMly2ylOvX61LEBA6VZtvn4pQMalclAYla+RgDeURbymYxFEn UuZ8taJe7GzxchntFwkTs/WVHN92cvKIA9lxqafMdnmEcQDQe/a9+sld rHeWMkWt1CH4QJPcPN1xFZvtYSQBx5EPiQ3QKhmpX3egOWFKLOGdpRKS XUY9QvKJNBkFejnr
+g2.nsa.itsec-lab.ch.	2592000	IN	DNSKEY	256 3 8 AwEAAfqQ+rIDmvCVKoXheyM3qjIwK1bWpOz0FWZWH2tiXc0miKVTNqAx TxcA+v1TSrR0oV2riEj6zLl+mKUN9fvFQ4obs9g+RP1I56zYZbGKIvLS i2+6oyA+9ohDNb2v+isrycfb4nmhlAcIv3Z/OiMsvtX4aWWWryraipiM gzl2upvH
+g2.nsa.itsec-lab.ch.	2592000	IN	RRSIG	DNSKEY 8 4 2592000 20201219140000 20201119140000 24305 g2.nsa.itsec-lab.ch. WGQpD/dy4Dlzwx/pwTgS1ZGeMks4L6iL7auuIfhiSn+2mf9I6nrrqizU pxmHIkVXVCG9BLMZi7fyIlrWX544Zf6EZY0z5m3rqmvFqoAMLtFlTmCD 8xtyg6WeMwRmVjMHOe3tk3eCbP7F1oU2nsz/1foU/OmTu+iFgefX7j4D FnxUlnHYyVAymwjDp8VcnurUh3K1dTRaHEP6VufE1V91Z8YdHnpPTpS/ SYh1AC1d93qe1tH3GkKzwzcq1znXVzG/r0uPzT/lZER64zVDB3YmL/P1 Hp0kbWYpYhbSBvRsl7pP/gzTRiTioCsqiWVZnvyEo4XW4MLu+3CfcDfk mcV6QHdm3Iyw+88NDNqmfO9g6lM46TgW9U6MipNOe0eWjpib/HRsXqNT 41abgRFx6+W9EVzTQu/cjS0gGRktvK/kRHZ4rZI5PqTFJmt1wT3XVgQX v/nJEolYPV4YWTvIsg7QyqFVymgOEm+rNXZpnNz4oV3obqYbcul1cuoz FSjZviZYklMOMz7tN6GVoJJx5xOgF8sbXrI8LjQ3bUs/AFERTKtLPKDX 6sIX6zYrecMxQcxqnZnXsSvJzMr6iBiC2KheuQZ0wtjtTBtFVA8ea0NA LiCpQjsq+U6cFrbPNo6SNyQ63MaT7elOcUpkgvtBDobx8thqU821yD0I +OvuTm6O7ds=
+g2.nsa.itsec-lab.ch.	2592000	IN	RRSIG	DNSKEY 8 4 2592000 20201219140000 20201119140000 50899 g2.nsa.itsec-lab.ch. nnYvKxjwBTPCJwehD7wT7VZbGpUEJYf613rREvgMQBQN54Upv0v2pVb+ TYWTwUZQ2ev2Rcx7StmpA7ELiBL+jQn6BD00gugJFaBt8yZxGn5/4P8I P7VZNeR5CZHu9TbFQ2Q8F1MSXBmSWvDuc+YknPkU/PSISjNKs4qb0faz Ssc=
+
+;; Query time: 4 msec
+;; SERVER: 127.0.0.1#53(127.0.0.1)
+;; WHEN: Thu Nov 19 22:43:27 CET 2020
+;; MSG SIZE  rcvd: 1498
+

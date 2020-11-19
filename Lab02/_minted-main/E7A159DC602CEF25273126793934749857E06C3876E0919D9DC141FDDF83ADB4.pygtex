@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+zone \PYGZdq{}g2.nsa.itsec\PYGZhy{}lab.ch\PYGZdq{} IN \PYGZob{}
+	type master;
+	file \PYGZdq{}/etc/bind/zones/master/db.g2.nsa.itsec\PYGZhy{}lab.ch.zone\PYGZdq{};
+	allow\PYGZhy{}update \PYGZob{} none; \PYGZcb{};
+	allow\PYGZhy{}transfer \PYGZob{} 160.98.47.74;\PYGZcb{};
+	notify yes;
+\PYGZcb{};
+\end{Verbatim}

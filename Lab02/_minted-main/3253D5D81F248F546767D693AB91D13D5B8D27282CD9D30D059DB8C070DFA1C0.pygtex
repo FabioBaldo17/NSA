@@ -1,0 +1,19 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYGZdl{}ORIGIN g2.nsa.itsec\PYGZhy{}lab.ch.
+\PYGZdl{}TTL 86400
+@	IN	SOA	g2.nsa.itsec\PYGZhy{}lab.ch. root.g2.nsa.itsec\PYGZhy{}lab.ch. (
+		2018103001
+		3600
+		900
+		604800
+		86400 )
+
+; Descriptions of names servers of this domain (primary and secondary)
+	IN	NS	ns1.g2.nsa.itsec\PYGZhy{}lab.ch.
+	IN	NS	nsans01.tic.heia\PYGZhy{}fr.ch.
+	IN 	MX 10	86.119.31.49
+
+; List of known hosts in
+ns1	IN	A	86.119.31.49
+www	IN	CNAME	ns1
+\end{Verbatim}

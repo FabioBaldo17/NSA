@@ -1,0 +1,30 @@
+user@dns:/etc/bind$ dig -t axfr g2.nsa.itsec-lab.ch @nsans01.tic.heia-fr.ch
+
+; <<>> DiG 9.16.1-Ubuntu <<>> -t axfr g2.nsa.itsec-lab.ch @nsans01.tic.heia-fr.ch
+;; global options: +cmd
+g2.nsa.itsec-lab.ch.	2592000	IN	SOA	g2.nsa.itsec-lab.ch. root.g2.nsa.itsec-lab.ch. 2018103004 2592000 900 604800 86400
+g2.nsa.itsec-lab.ch.	2592000	IN	RRSIG	DNSKEY 8 4 2592000 20201219140000 20201119140000 24305 g2.nsa.itsec-lab.ch. WGQpD/dy4Dlzwx/pwTgS1ZGeMks4L6iL7auuIfhiSn+2mf9I6nrrqizU pxmHIkVXVCG9BLMZi7fyIlrWX544Zf6EZY0z5m3rqmvFqoAMLtFlTmCD 8xtyg6WeMwRmVjMHOe3tk3eCbP7F1oU2nsz/1foU/OmTu+iFgefX7j4D FnxUlnHYyVAymwjDp8VcnurUh3K1dTRaHEP6VufE1V91Z8YdHnpPTpS/ SYh1AC1d93qe1tH3GkKzwzcq1znXVzG/r0uPzT/lZER64zVDB3YmL/P1 Hp0kbWYpYhbSBvRsl7pP/gzTRiTioCsqiWVZnvyEo4XW4MLu+3CfcDfk mcV6QHdm3Iyw+88NDNqmfO9g6lM46TgW9U6MipNOe0eWjpib/HRsXqNT 41abgRFx6+W9EVzTQu/cjS0gGRktvK/kRHZ4rZI5PqTFJmt1wT3XVgQX v/nJEolYPV4YWTvIsg7QyqFVymgOEm+rNXZpnNz4oV3obqYbcul1cuoz FSjZviZYklMOMz7tN6GVoJJx5xOgF8sbXrI8LjQ3bUs/AFERTKtLPKDX 6sIX6zYrecMxQcxqnZnXsSvJzMr6iBiC2KheuQZ0wtjtTBtFVA8ea0NA LiCpQjsq+U6cFrbPNo6SNyQ63MaT7elOcUpkgvtBDobx8thqU821yD0I +OvuTm6O7ds=
+g2.nsa.itsec-lab.ch.	2592000	IN	RRSIG	DNSKEY 8 4 2592000 20201219140000 20201119140000 50899 g2.nsa.itsec-lab.ch. nnYvKxjwBTPCJwehD7wT7VZbGpUEJYf613rREvgMQBQN54Upv0v2pVb+ TYWTwUZQ2ev2Rcx7StmpA7ELiBL+jQn6BD00gugJFaBt8yZxGn5/4P8I P7VZNeR5CZHu9TbFQ2Q8F1MSXBmSWvDuc+YknPkU/PSISjNKs4qb0faz Ssc=
+g2.nsa.itsec-lab.ch.	2592000	IN	DNSKEY	256 3 8 AwEAAfqQ+rIDmvCVKoXheyM3qjIwK1bWpOz0FWZWH2tiXc0miKVTNqAx TxcA+v1TSrR0oV2riEj6zLl+mKUN9fvFQ4obs9g+RP1I56zYZbGKIvLS i2+6oyA+9ohDNb2v+isrycfb4nmhlAcIv3Z/OiMsvtX4aWWWryraipiM gzl2upvH
+g2.nsa.itsec-lab.ch.	2592000	IN	DNSKEY	257 3 8 AwEAAalUg9bFq+RCmi1COYXKbzIdlolTIZsV1yvQCG1Q+pGtatHTXQuJ AeCdyWckuP6FJtZUoXpsgtGXi6hfHtgmYhHQ9hIBH3pFYIc95u8nIanr iTx26wJy9KwYa553DhpX5OhmKZfBg5TRtDi1V4VDbe84KWgDxgDpyr0H XmzfZYyab18OFWRPnAebvDnEE8jeXC2seWtzDwBxWzYRnZik4mHAdm8g 1T7/v/qQ0ZPQ9pwgCGsLZZUPT9R587lEsXBMNp+fpDBEmX0X4iofETvI iy9POGFZ/c2NBTZNLvuw9VCAw168Ht8eQRpc9lyAAGVFSCsGi+V3g0si g0Sv/12jK+Ots1WYSJ/cFkd3kXRctbd7Rmh7TwK1nDBObUeRDchP5iVV 36pM7+v9IKZgbPUeLuX9o6/yynrTjIRU+4xWvggAuiYNLluYYn8zZ39B pNIoKmCeM/Doas8r+Fz7wfMUNMmV0lUPkmm2C9gFXpEDcrY60UfI2mvw XLuLSUTVMly2ylOvX61LEBA6VZtvn4pQMalclAYla+RgDeURbymYxFEn UuZ8taJe7GzxchntFwkTs/WVHN92cvKIA9lxqafMdnmEcQDQe/a9+sld rHeWMkWt1CH4QJPcPN1xFZvtYSQBx5EPiQ3QKhmpX3egOWFKLOGdpRKS XUY9QvKJNBkFejnr
+g2.nsa.itsec-lab.ch.	86400	IN	RRSIG	NSEC 8 4 86400 20201219140000 20201119140000 50899 g2.nsa.itsec-lab.ch. YZwaMskHk+d6+8DxF+A2CLpYWo6eHibqLRp/Pr1K0EQibMRF/nfL95Ym oem9uPgwz5WINa2rqT161sHh1zy127L/UwV4sQ6T7ewRkqTlJAH75kKf dHvJsbYY1kJiiGQJ57kx1tRyxYX4H9As2veA74jacxsZTEmoztLyVzx4 PUQ=
+g2.nsa.itsec-lab.ch.	86400	IN	NSEC	ns1.g2.nsa.itsec-lab.ch. NS SOA MX RRSIG NSEC DNSKEY
+g2.nsa.itsec-lab.ch.	2592000	IN	RRSIG	MX 8 4 2592000 20201219140000 20201119140000 50899 g2.nsa.itsec-lab.ch. a7BSpDv391BnWctZ8X+FwcpW0nHrheu1CtJX/TeHmH1Y08hczV54cKLV 0Mu/IeXtWjl5Yhjo5ftEw+tEVcRDpRJKfBth3iAB2WqGvKYp1SQpOKQC HXGppcpubozaXFYjG1L6MYLdvVIq1lKoUGvHdVpmcq8O2FAVQDXPQL18 Jcs=
+g2.nsa.itsec-lab.ch.	2592000	IN	MX	10 86.119.31.49.g2.nsa.itsec-lab.ch.
+g2.nsa.itsec-lab.ch.	2592000	IN	RRSIG	NS 8 4 2592000 20201219140000 20201119140000 50899 g2.nsa.itsec-lab.ch. +TJsSFM3W1oLLAIGi+6+d3QoJbu9QZKLMK94JqXq/FpwkLZLQMFKY1vv t3GcjsEiMBE0yb29CHUAlpdNyEg6cGSGYfa7zBULpPQVAtPrSVVltrm2 UU3EqO2ZBGCNMJexNNLj9/zEpRXcHvFxyr7wKxXjVuzKOzjCfbW1Zxm3 upA=
+g2.nsa.itsec-lab.ch.	2592000	IN	NS	ns1.g2.nsa.itsec-lab.ch.
+g2.nsa.itsec-lab.ch.	2592000	IN	NS	nsans01.tic.heia-fr.ch.
+g2.nsa.itsec-lab.ch.	2592000	IN	RRSIG	SOA 8 4 2592000 20201219140000 20201119140000 50899 g2.nsa.itsec-lab.ch. XFzj07mtuaYkYLfrSmf7pEtBL/UTEkI8N6MamkE5zkvagNduDSTbsHa/ rUt8oZX+yHJR48bJht8h6Z2WrJ8nx1IS4wDP84j/zAUi+bbPtrFOAwkQ R5y3nXZ8FZxe5kGSC8HLoW8TsXRRmp5wz0G7uDs+NVXMLdZZHqcmTU0k glo=
+ns1.g2.nsa.itsec-lab.ch. 86400	IN	RRSIG	NSEC 8 5 86400 20201219140000 20201119140000 50899 g2.nsa.itsec-lab.ch. N66z9AN071WSIP+l4oU0pIyIWhR//hFdSaat0gyVV/GIvQo587/QtRSa qvuzDaguS6gSTpIJW3t9HM+ubpnHhvS5j9VkMVewI5zRtuoE+3bexBk0 M9n6jLzYBThwmDF789ZuYWn3SKzTh0ZdIvbCuFISmALzHpXC0IF4uKRk pHE=
+ns1.g2.nsa.itsec-lab.ch. 86400	IN	NSEC	www.g2.nsa.itsec-lab.ch. A RRSIG NSEC
+ns1.g2.nsa.itsec-lab.ch. 2592000 IN	RRSIG	A 8 5 2592000 20201219140000 20201119140000 50899 g2.nsa.itsec-lab.ch. JuhhtepJesFxaLeCAwSX4lLbI72OKNIymdPSi3qHp+AE26bbIwCohw6h o1WBfsC/xm//szxp4ZgaYg3gIiNVy74xcE/A6HDdmIQWfihoL55n7NTX ToeCzA6xRQ9KLNdFuVGTSinIjdvXCannt8XWHzCW7nm3mynipyDwqnvY ERU=
+ns1.g2.nsa.itsec-lab.ch. 2592000 IN	A	86.119.31.49
+www.g2.nsa.itsec-lab.ch. 86400	IN	RRSIG	NSEC 8 5 86400 20201219140000 20201119140000 50899 g2.nsa.itsec-lab.ch. pkehsbMxYnnnfb3IcAFI5LJq3CYUI0qRe5F66wmuUo5zMX74CMBbRNmZ mRZgRg4rysCx8rVsh5JTk+qRbl3oHAQ2idAeGDOPRj79PHMaHAuO2cKl jdfhPojrbUuaIqhMTrP/dHP5gOR+4Szb2UUl5TTToMdxe0za9Gxh2OYb nng=
+www.g2.nsa.itsec-lab.ch. 86400	IN	NSEC	g2.nsa.itsec-lab.ch. CNAME RRSIG NSEC
+www.g2.nsa.itsec-lab.ch. 2592000 IN	RRSIG	CNAME 8 5 2592000 20201219140000 20201119140000 50899 g2.nsa.itsec-lab.ch. qRPUf4kstyT++FlUkMMFzhBOg0IGsve8HG5BUs1KmulIR6MBrE6ADpS5 VZvxcfSGXReicd6sVj1l71yc76RsWIBPTPR0LgA2qnLxzx3hypCdbzjd y0w6tdUk+5xYnlquYYGSInnO/u2QZ7ASuI6OKoYZLae4Gu4eHroep4p2 29U=
+www.g2.nsa.itsec-lab.ch. 2592000 IN	CNAME	ns1.g2.nsa.itsec-lab.ch.
+g2.nsa.itsec-lab.ch.	2592000	IN	SOA	g2.nsa.itsec-lab.ch. root.g2.nsa.itsec-lab.ch. 2018103004 2592000 900 604800 86400
+;; Query time: 4 msec
+;; SERVER: 160.98.47.74#53(160.98.47.74)
+;; WHEN: Thu Nov 19 16:27:10 CET 2020
+;; XFR size: 22 records (messages 1, bytes 3218)

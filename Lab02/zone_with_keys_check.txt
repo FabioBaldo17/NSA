@@ -1,0 +1,24 @@
+user@dns:/etc/bind$ sudo dig @localhost DNSKEY g2.nsa.itsec-lab.ch -t dnskey
+;; Warning, extra type option
+
+; <<>> DiG 9.16.1-Ubuntu <<>> @localhost DNSKEY g2.nsa.itsec-lab.ch -t dnskey
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 16652
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+; COOKIE: 6544b65de8ff7b51010000005fb66229ed92008160efea74 (good)
+;; QUESTION SECTION:
+;g2.nsa.itsec-lab.ch.		IN	DNSKEY
+
+;; ANSWER SECTION:
+g2.nsa.itsec-lab.ch.	86400	IN	DNSKEY	256 3 8 AwEAAdqvDLpAfoscQccD35JNgRLAhvTb7Yfpz8eejJJmLX7Pr6ohSXYJ oQ3eRwy0UwO2q6eNV303AX4HWfr5ogNCfn5ASuwgRgVJ7s122P1VxQ0H FTrGIEgUFvIxxzedP4qkuWYuRzo7aPxg928gI//c9jl3sfOTN0rtZU7A VkUWohed
+
+;; Query time: 4 msec
+;; SERVER: 127.0.0.1#53(127.0.0.1)
+;; WHEN: Thu Nov 19 13:16:41 CET 2020
+;; MSG SIZE  rcvd: 224
+

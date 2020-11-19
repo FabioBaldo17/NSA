@@ -1,0 +1,7 @@
+fabio@fabio-popOs:~$ sudo delv +trust  @86.119.31.49 www.switch.ch  ANY
+; fully validated
+www.switch.ch.		300	IN	RRSIG	CNAME 13 3 300 20201217220541 20201118050535 65055 switch.ch. N0hi6O/oxBXKxwxZWWGIiJjXs3TbBKSHmae/J45NKFRvZy3Y2PYidAnF 0jwaPhwB/3nk7L3fWLPnc8X95ID8gQ==
+www.switch.ch.		300	IN	CNAME	prod.www.switch.ch.
+www.switch.ch.		180	IN	RRSIG	NSEC 13 3 180 20201212173242 20201116040544 65055 switch.ch. htXbQE47Nalg+qeR5Z7B4N+4VmqBMa5bfkb9GLOPk59hqL7ahqJQC3LI ZWrk69TLZP7bNuOVPYTZKfidi5r1hQ==
+www.switch.ch.		180	IN	NSEC	cms.www.switch.ch. CNAME RRSIG NSEC
+

@@ -1,0 +1,24 @@
+user@dns:/etc/bind$ sudo dig @localhost DNSKEY g2.nsa.itsec-lab.ch -t dnskey
+;; Warning, extra type option
+
+; <<>> DiG 9.16.1-Ubuntu <<>> @localhost DNSKEY g2.nsa.itsec-lab.ch -t dnskey
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 7220
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+; COOKIE: 5009cc20712b45fd010000005fb6e59be643c701d4113bc8 (good)
+;; QUESTION SECTION:
+;g2.nsa.itsec-lab.ch.		IN	DNSKEY
+
+;; ANSWER SECTION:
+g2.nsa.itsec-lab.ch.	2592000	IN	DNSKEY	256 3 8 AwEAAfqQ+rIDmvCVKoXheyM3qjIwK1bWpOz0FWZWH2tiXc0miKVTNqAx TxcA+v1TSrR0oV2riEj6zLl+mKUN9fvFQ4obs9g+RP1I56zYZbGKIvLS i2+6oyA+9ohDNb2v+isrycfb4nmhlAcIv3Z/OiMsvtX4aWWWryraipiM gzl2upvH
+g2.nsa.itsec-lab.ch.	2592000	IN	DNSKEY	257 3 8 AwEAAalUg9bFq+RCmi1COYXKbzIdlolTIZsV1yvQCG1Q+pGtatHTXQuJ AeCdyWckuP6FJtZUoXpsgtGXi6hfHtgmYhHQ9hIBH3pFYIc95u8nIanr iTx26wJy9KwYa553DhpX5OhmKZfBg5TRtDi1V4VDbe84KWgDxgDpyr0H XmzfZYyab18OFWRPnAebvDnEE8jeXC2seWtzDwBxWzYRnZik4mHAdm8g 1T7/v/qQ0ZPQ9pwgCGsLZZUPT9R587lEsXBMNp+fpDBEmX0X4iofETvI iy9POGFZ/c2NBTZNLvuw9VCAw168Ht8eQRpc9lyAAGVFSCsGi+V3g0si g0Sv/12jK+Ots1WYSJ/cFkd3kXRctbd7Rmh7TwK1nDBObUeRDchP5iVV 36pM7+v9IKZgbPUeLuX9o6/yynrTjIRU+4xWvggAuiYNLluYYn8zZ39B pNIoKmCeM/Doas8r+Fz7wfMUNMmV0lUPkmm2C9gFXpEDcrY60UfI2mvw XLuLSUTVMly2ylOvX61LEBA6VZtvn4pQMalclAYla+RgDeURbymYxFEn UuZ8taJe7GzxchntFwkTs/WVHN92cvKIA9lxqafMdnmEcQDQe/a9+sld rHeWMkWt1CH4QJPcPN1xFZvtYSQBx5EPiQ3QKhmpX3egOWFKLOGdpRKS XUY9QvKJNBkFejnr
+
+;; Query time: 0 msec
+;; SERVER: 127.0.0.1#53(127.0.0.1)
+;; WHEN: Thu Nov 19 22:37:31 CET 2020
+;; MSG SIZE  rcvd: 756

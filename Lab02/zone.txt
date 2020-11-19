@@ -1,0 +1,17 @@
+$ORIGIN g2.nsa.itsec-lab.ch.
+$TTL 86400
+@	IN	SOA	g2.nsa.itsec-lab.ch. root.g2.nsa.itsec-lab.ch. (
+		2018103001
+		3600
+		900
+		604800
+		86400 )
+
+; Descriptions of names servers of this domain (primary and secondary)
+	IN	NS	ns1.g2.nsa.itsec-lab.ch.
+	IN	NS	nsans01.tic.heia-fr.ch.
+	IN 	MX 10	86.119.31.49
+
+; List of known hosts in
+ns1	IN	A	86.119.31.49
+www	IN	CNAME	ns1

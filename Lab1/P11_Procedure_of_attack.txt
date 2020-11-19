@@ -1,0 +1,1 @@
+In order to spoof the ARP and as a consequence to redirect the traffic from a specific target  to our host (using ettercap) a first scan of all devices present in the network is needed. Then, selecting the designed IP it is possible to launch the attack simpli by selecting "ARP poisoning" in the menu of the program.

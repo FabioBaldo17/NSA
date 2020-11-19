@@ -1,0 +1,11 @@
+options {
+
+	dnssec-validation auto;
+
+	listen-on-v6 { any; };
+	directory "/var/cache/bind";
+        allow-recursion { localhost; 5.90.153.238; };
+        version "it's a secret";
+        dump-file "/var/cache/bind/dump.db";
+        masterfile-format text;
+};

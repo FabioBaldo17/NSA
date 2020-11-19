@@ -1,0 +1,17 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+user@dns:\PYGZti{}\PYGZdl{} dig \PYGZhy{}t axfr g2.nsa.itsec\PYGZhy{}lab.ch @nsans01.tic.heia\PYGZhy{}fr.ch
+
+; \PYGZlt{}\PYGZlt{}\PYGZgt{}\PYGZgt{} DiG 9.16.1\PYGZhy{}Ubuntu \PYGZlt{}\PYGZlt{}\PYGZgt{}\PYGZgt{} \PYGZhy{}t axfr g2.nsa.itsec\PYGZhy{}lab.ch @nsans01.tic.heia\PYGZhy{}fr.ch
+;; global options: +cmd
+g2.nsa.itsec\PYGZhy{}lab.ch.	86400	IN	SOA	g2.nsa.itsec\PYGZhy{}lab.ch. root.g2.nsa.itsec\PYGZhy{}lab.ch. 2018103001 3600 900 604800 86400
+g2.nsa.itsec\PYGZhy{}lab.ch.	86400	IN	MX	10 5.90.153.238.g2.nsa.itsec\PYGZhy{}lab.ch.
+g2.nsa.itsec\PYGZhy{}lab.ch.	86400	IN	NS	ns1.g2.nsa.itsec\PYGZhy{}lab.ch.
+g2.nsa.itsec\PYGZhy{}lab.ch.	86400	IN	NS	nsans01.tic.heia\PYGZhy{}fr.ch.
+ns1.g2.nsa.itsec\PYGZhy{}lab.ch. 86400	IN	A	5.90.153.238
+www.g2.nsa.itsec\PYGZhy{}lab.ch. 86400	IN	CNAME	ns1.g2.nsa.itsec\PYGZhy{}lab.ch.
+g2.nsa.itsec\PYGZhy{}lab.ch.	86400	IN	SOA	g2.nsa.itsec\PYGZhy{}lab.ch. root.g2.nsa.itsec\PYGZhy{}lab.ch. 2018103001 3600 900 604800 86400
+;; Query time: 4 msec
+;; SERVER: 160.98.47.74\PYGZsh{}53(160.98.47.74)
+;; WHEN: Fri Nov 06 20:48:33 CET 2020
+;; XFR size: 7 records (messages 1, bytes 240)
+\end{Verbatim}

@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+include \PYGZdq{}/etc/bind/named.conf.options\PYGZdq{};
+include \PYGZdq{}/etc/bind/named.conf.local\PYGZdq{};
+include \PYGZdq{}/etc/bind/named.conf.default\PYGZhy{}zones\PYGZdq{};
+include \PYGZdq{}/etc/bind/rndc.key\PYGZdq{};
+\end{Verbatim}

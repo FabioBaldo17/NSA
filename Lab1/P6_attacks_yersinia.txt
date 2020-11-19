@@ -1,0 +1,92 @@
+ATTACKS
+       Attacks Implemented in STP:
+
+           0: NONDOS attack sending conf BPDU
+
+           1: NONDOS attack sending tcn BPDU
+
+           2: DOS attack sending conf BPDUs
+
+           3: DOS attack sending tcn BPDUs
+
+           4: NONDOS attack Claiming Root Role
+
+           5: NONDOS attack Claiming Other Role
+
+           6: DOS attack Claiming Root Role with MiTM
+
+       Attacks Implemented in CDP:
+
+           0: NONDOS attack sending CDP packet
+
+           1: DOS attack flooding CDP table
+
+           2: NONDOS attack Setting up a virtual device
+
+       Attacks Implemented in HSRP:
+
+           0: NONDOS attack sending raw HSRP packet
+
+           1: NONDOS attack becoming ACTIVE router
+
+           2: NONDOS attack becoming ACTIVE router (MITM)
+
+       Attacks Implemented in DHCP:
+
+           0: NONDOS attack sending RAW packet
+
+           1: DOS attack sending DISCOVER packet
+
+           2: NONDOS attack creating DHCP rogue server
+
+           3: DOS attack sending RELEASE packet
+
+       Attacks Implemented in DTP:
+
+           0: NONDOS attack sending DTP packet
+
+           1: NONDOS attack enabling trunking
+
+       Attacks Implemented in 802.1Q:
+
+           0: NONDOS attack sending 802.1Q packet
+
+           1: NONDOS attack sending 802.1Q double enc. packet
+
+           2: DOS attack sending 802.1Q arp poisoning
+
+       Attacks Implemented in VTP:
+
+           0: NONDOS attack sending VTP packet
+
+           1: DOS attack deleting all VTP vlans
+
+           2: DOS attack deleting one vlan
+
+           3: NONDOS attack adding one vlan
+
+           4: DOS attack crashing Catalyst
+
+       Attacks Implemented in 802.1X:
+
+           0: NONDOS attack sending 802.1X packet
+
+           1: NONDOS attack Mitm 802.1X with 2 interfaces
+
+       Attacks Implemented in MPLS:
+
+           0: NONDOS attack sending TCP MPLS packet
+
+           1: NONDOS attack sending TCP MPLS with double header
+
+           2: NONDOS attack sending UDP MPLS packet
+
+           3: NONDOS attack sending UDP MPLS with double header
+
+           4: NONDOS attack sending ICMP MPLS packet
+
+           5: NONDOS attack sending ICMP MPLS with double header
+
+       Attacks Implemented in ISL:
+
+           None at the moment

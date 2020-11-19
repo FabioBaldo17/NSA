@@ -1,0 +1,33 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+user@dns:/etc/bind\PYGZdl{} tree
+.
+\PYGZhy{}\PYGZhy{} KSK
+|   \PYGZhy{}\PYGZhy{} Kg2.nsa.itsec\PYGZhy{}lab.ch.+008+24305.key
+|   \PYGZhy{}\PYGZhy{} Kg2.nsa.itsec\PYGZhy{}lab.ch.+008+24305.private
+\PYGZhy{}\PYGZhy{} SET
+|   \PYGZhy{}\PYGZhy{} dsset\PYGZhy{}g2.nsa.itsec\PYGZhy{}lab.ch.
+\PYGZhy{}\PYGZhy{} ZSK
+|   \PYGZhy{}\PYGZhy{} Kg2.nsa.itsec\PYGZhy{}lab.ch.+008+50899.key
+|   \PYGZhy{}\PYGZhy{} Kg2.nsa.itsec\PYGZhy{}lab.ch.+008+50899.private
+\PYGZhy{}\PYGZhy{} bind.keys
+\PYGZhy{}\PYGZhy{} db.0
+\PYGZhy{}\PYGZhy{} db.127
+\PYGZhy{}\PYGZhy{} db.255
+\PYGZhy{}\PYGZhy{} db.empty
+\PYGZhy{}\PYGZhy{} db.local
+\PYGZhy{}\PYGZhy{} named.conf
+\PYGZhy{}\PYGZhy{} named.conf.default\PYGZhy{}zones
+\PYGZhy{}\PYGZhy{} named.conf.local
+\PYGZhy{}\PYGZhy{} named.conf.options
+\PYGZhy{}\PYGZhy{} rndc.key
+\PYGZhy{}\PYGZhy{} trusted\PYGZhy{}key.key
+\PYGZhy{}\PYGZhy{} zones
+|   \PYGZhy{}\PYGZhy{} master
+|   |   \PYGZhy{}\PYGZhy{} db.34.98.160.in\PYGZhy{}addr.zone
+|   |   \PYGZhy{}\PYGZhy{} db.g2.nsa.itsec\PYGZhy{}lab.ch.zone
+|   |   \PYGZhy{}\PYGZhy{} db.g2.nsa.itsec\PYGZhy{}lab.ch.zone.signed
+|   \PYGZhy{}\PYGZhy{} slave
+\PYGZhy{}\PYGZhy{} zones.rfc1918
+
+6 directories, 21 files
+\end{Verbatim}

@@ -1,0 +1,20 @@
+user@dns:/etc/bind/zones/master$ sudo rndc status
+version: BIND 9.16.1-Ubuntu (Stable Release) <id:d497c32> (it's a secret)
+running on dns: Linux x86_64 5.4.0-52-generic #57-Ubuntu SMP Thu Oct 15 10:57:00 UTC 2020
+boot time: Thu, 05 Nov 2020 20:22:08 GMT
+last configured: Thu, 05 Nov 2020 20:22:08 GMT
+configuration file: /etc/bind/named.conf
+CPUs found: 1
+worker threads: 1
+UDP listeners per interface: 1
+number of zones: 104 (97 automatic)
+debug level: 0
+xfers running: 0
+xfers deferred: 0
+soa queries in progress: 0
+query logging is OFF
+recursive clients: 0/900/1000
+tcp clients: 0/150
+TCP high-water: 1
+server is up and running
+

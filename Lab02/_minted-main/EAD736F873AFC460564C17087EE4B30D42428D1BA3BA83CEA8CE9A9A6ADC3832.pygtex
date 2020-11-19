@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+fabio@fabio\PYGZhy{}popOs:\PYGZti{}\PYGZdl{} nslookup www.google.com
+Server:		86.119.31.49
+Address:	86.119.31.49\PYGZsh{}53
+
+Name:	www.google.com
+Address: 192.168.1.242 \PYGZlt{}\PYGZhy{} the ip of the local webpage
+Name:	www.google.com
+Address: 2a00:1450:400a:801::2004
+\end{Verbatim}

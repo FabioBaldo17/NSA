@@ -1,0 +1,14 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+user@hacker:\PYGZti{}\PYGZdl{} netwox 105 \PYGZhy{}\PYGZhy{}help
+Title: Sniff and send DNS answers
+Usage: netwox 105 \PYGZhy{}h hostname \PYGZhy{}H ip \PYGZhy{}a hostname \PYGZhy{}A ip [\PYGZhy{}d device]
+Parameters:
+ \PYGZhy{}h|\PYGZhy{}\PYGZhy{}hostname hostname         hostname \PYGZob{}www.example.com\PYGZcb{}
+ \PYGZhy{}H|\PYGZhy{}\PYGZhy{}hostnameip ip             hostname IP \PYGZob{}1.2.3.4\PYGZcb{}
+ \PYGZhy{}a|\PYGZhy{}\PYGZhy{}authns hostname           authoritative name server \PYGZob{}ns.example.com\PYGZcb{}
+ \PYGZhy{}A|\PYGZhy{}\PYGZhy{}authnsip ip               authns IP \PYGZob{}1.2.3.5\PYGZcb{}
+ \PYGZhy{}d|\PYGZhy{}\PYGZhy{}device device             device name \PYGZob{}Eth0\PYGZcb{}
+ \PYGZhy{}\PYGZhy{}help2                        display help for advanced parameters
+Example: netwox 105 \PYGZhy{}h \PYGZdq{}www.example.com\PYGZdq{} \PYGZhy{}H \PYGZdq{}1.2.3.4\PYGZdq{} \PYGZhy{}a \PYGZdq{}ns.example.com\PYGZdq{} \PYGZhy{}A \PYGZdq{}1.2.3.5\PYGZdq{}
+Example: netwox 105 \PYGZhy{}\PYGZhy{}hostname \PYGZdq{}www.example.com\PYGZdq{} \PYGZhy{}\PYGZhy{}hostnameip \PYGZdq{}1.2.3.4\PYGZdq{} \PYGZhy{}\PYGZhy{}authns \PYGZdq{}ns.example.com\PYGZdq{} \PYGZhy{}\PYGZhy{}authnsip \PYGZdq{}1.2.3.5\PYGZdq{}
+\end{Verbatim}

@@ -1,0 +1,16 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+fabio@fabio\PYGZhy{}popOs:\PYGZti{}\PYGZdl{} nslookup www.apple.com 86.119.31.49
+Server:		86.119.31.49
+Address:	86.119.31.49\PYGZsh{}53
+
+Non\PYGZhy{}authoritative answer:
+www.apple.com	canonical name = www.apple.com.edgekey.net.
+www.apple.com.edgekey.net	canonical name = www.apple.com.edgekey.net.globalredir.akadns.net.
+www.apple.com.edgekey.net.globalredir.akadns.net	canonical name = e6858.dsce9.akamaiedge.net.
+Name:	e6858.dsce9.akamaiedge.net
+Address: 1.2.3.4
+Name:	e6858.dsce9.akamaiedge.net
+Address: 2a02:26f0:3000:186::1aca
+Name:	e6858.dsce9.akamaiedge.net
+Address: 2a02:26f0:3000:1b2::1aca
+\end{Verbatim}
