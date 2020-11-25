@@ -1,0 +1,38 @@
+-----------------------------------------------R1-------------------------------------------------
+R1#Config terminal
+R1(config)#interface fastEthernet 1/0
+R1(config-if)#ip address 209.165.200.225 255.255.255.248
+R1(config-if)#ip address 172.16.3.1 255.255.255.0
+R1#show running-config 
+...
+interface FastEthernet1/0
+ ip address 209.165.200.225 255.255.255.248
+ shutdown
+ duplex auto
+ speed auto
+!
+interface FastEthernet1/1
+ ip address 172.16.3.1 255.255.255.0
+ shutdown
+ duplex auto
+ speed auto
+!
+...
+
+-----------------------------------------------ASA-------------------------------------------------
+ASA(config)# 
+Interface                  IP-Address      OK? Method Status                Protocol
+GigabitEthernet0/0         209.226.200.226 YES manual up                    up  
+GigabitEthernet0/1         192.168.10.254  YES manual up                    up  
+GigabitEthernet0/2         unassigned      YES unset  administratively down up  
+GigabitEthernet0/3         unassigned      YES unset  administratively down down
+GigabitEthernet0/4         unassigned      YES unset  administratively down down
+GigabitEthernet0/5         unassigned      YES unset  administratively down down
+GigabitEthernet0/6         unassigned      YES unset  administratively down down
+Management0/0              unassigned      YES unset  administratively down down
+
+ASA(config)# ssl encryption aes256-sha1
+WARNING: This command has been deprecated; use 'ssl cipher' instead.
+INFO: Converting to: ssl cipher default custom "AES256-SHA"
+INFO: Converting to: ssl cipher tlsv1 custom "AES256-SHA"
+INFO: Converting to: ssl cipher dtlsv1 custom "AES256-SHA"

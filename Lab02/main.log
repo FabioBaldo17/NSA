@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.2)  20 NOV 2020 00:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.2)  20 NOV 2020 19:35
 entering extended mode
 **./main.tex
 (main.tex
@@ -899,7 +899,7 @@ pygtex) [6]
 pygtex)
 (_minted-main/EAD736F873AFC460564C17087EE4B30D42428D1BA3BA83CEA8CE9A9A6ADC3832.
 pygtex)
-<images/cache_poisoning_scheme.png, id=176, 673.51625pt x 382.42876pt>
+<images/cache_poisoning_scheme.png, id=180, 673.51625pt x 382.42876pt>
 File: images/cache_poisoning_scheme.png Graphic file (type png)
 <use images/cache_poisoning_scheme.png>
 Package pdftex.def Info: images/cache_poisoning_scheme.png  used on input line 
@@ -919,7 +919,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 93--93
  600
  []
 
-<images/cache_poisoning_wireshark_log.png, id=190, 1733.47626pt x 1392.20125pt>
+<images/cache_poisoning_wireshark_log.png, id=194, 1733.47626pt x 1392.20125pt>
 
 File: images/cache_poisoning_wireshark_log.png Graphic file (type png)
 <use images/cache_poisoning_wireshark_log.png>
@@ -948,40 +948,62 @@ pygtex)
 Overfull \vbox (11.09366pt too high) detected at line 126
  []
 
-[12]
-<images/dnspath1.png, id=217, 663.47874pt x 927.465pt>
+[12] (/home/fabio/.miktex/texmfs/install/tex/latex/ucs/uni-32.def
+File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
+)
+<images/dnspath1.png, id=222, 663.47874pt x 927.465pt>
 File: images/dnspath1.png Graphic file (type png)
 <use images/dnspath1.png>
 Package pdftex.def Info: images/dnspath1.png  used on input line 138.
 (pdftex.def)             Requested size: 339.03445pt x 473.93492pt.
-<images/dnspath2.png, id=218, 663.47874pt x 969.6225pt>
+<images/dnspath2.png, id=223, 663.47874pt x 969.6225pt>
 File: images/dnspath2.png Graphic file (type png)
 <use images/dnspath2.png>
 Package pdftex.def Info: images/dnspath2.png  used on input line 144.
 (pdftex.def)             Requested size: 339.03445pt x 495.47742pt.
  [13]
-<images/dnspath3.png, id=227, 660.4675pt x 602.25pt>
+<images/dnspath3.png, id=232, 660.4675pt x 602.25pt>
 File: images/dnspath3.png Graphic file (type png)
 <use images/dnspath3.png>
 Package pdftex.def Info: images/dnspath3.png  used on input line 150.
 (pdftex.def)             Requested size: 339.03445pt x 309.15594pt.
- [14 <./images/dnspath1.png>]
-<images/errors_dnsviz.png, id=233, 170.6375pt x 603.25375pt>
+
+[14 <./images/dnspath1.png>]
+<images/errors_dnsviz.png, id=238, 170.6375pt x 603.25375pt>
 File: images/errors_dnsviz.png Graphic file (type png)
 <use images/errors_dnsviz.png>
 Package pdftex.def Info: images/errors_dnsviz.png  used on input line 156.
 (pdftex.def)             Requested size: 93.47858pt x 330.47878pt.
  [15 <./images/dnspath2.png>] [16 <./images/dnspath3.png>]
 (_minted-main/E303F801CE92D49D9BC63B54B96FDEA2C4E02FEEC06896BA38C0C7CA522BD891.
-pygtex) [17 <./images/errors_dnsviz.png>]) [18] (main.aux)
+pygtex) [17 <./images/errors_dnsviz.png>]
+(_minted-main/CAE6343FE627F2CD2A149A75674102C963A809FC106882F9667C2408447DB648.
+pygtex)
+(_minted-main/ADC89F976CCEB34F932DF616442E980BF1C24F9BA62875122429BA575F0915B5.
+pygtex) [18]
+Underfull \vbox (badness 10000) detected at line 176
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 176
+ []
+
+[19]
+<images/DNSSec_trust_chain.png, id=265, 2571.6075pt x 1376.14125pt>
+File: images/DNSSec_trust_chain.png Graphic file (type png)
+<use images/DNSSec_trust_chain.png>
+Package pdftex.def Info: images/DNSSec_trust_chain.png  used on input line 185.
+
+(pdftex.def)             Requested size: 484.33705pt x 259.18076pt.
+ [20 <./images/DNSSec_trust_chain.png>]) [21] (main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: E1F2E5C8C16D092DC088A307096EDC9F;1088.
  ) 
 Here is how much of TeX's memory you used:
- 23587 strings out of 479800
- 445260 string characters out of 2874509
- 802620 words of memory out of 3000000
- 40016 multiletter control sequences out of 15000+200000
+ 23859 strings out of 479800
+ 449255 string characters out of 2874509
+ 810916 words of memory out of 3000000
+ 40272 multiletter control sequences out of 15000+200000
  543169 words of font info for 58 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,12n,96p,939b,916s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -996,9 +1018,9 @@ e/fabio/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss12.pfb></home
 /fabio/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy6.pfb></home/f
 abio/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt10.pfb></home/fa
 bio/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (19 pages, 738967 bytes).
+Output written on main.pdf (22 pages, 1056759 bytes).
 PDF statistics:
- 305 PDF objects out of 1000 (max. 8388607)
- 60 named destinations out of 1000 (max. 500000)
- 192 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 328 PDF objects out of 1000 (max. 8388607)
+ 66 named destinations out of 1000 (max. 500000)
+ 197 words of extra memory for PDF output out of 10000 (max. 10000000)
 

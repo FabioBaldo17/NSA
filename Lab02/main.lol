@@ -13,3 +13,5 @@
 \contentsline {listing}{\numberline {13}{\ignorespaces Check that the server returns the ZONE keys\relax }}{12}{listing.13}%
 \contentsline {listing}{\numberline {14}{\ignorespaces RRSIG test\relax }}{13}{listing.14}%
 \contentsline {listing}{\numberline {15}{\ignorespaces www.switch.ch test\relax }}{17}{listing.15}%
+\contentsline {listing}{\numberline {16}{\ignorespaces www.switch.ch dig 1\relax }}{18}{listing.16}%
+\contentsline {listing}{\numberline {17}{\ignorespaces www.switch.ch dig 2\relax }}{20}{listing.17}%

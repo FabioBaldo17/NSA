@@ -1,0 +1,32 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+fabio@fabio\PYGZhy{}popOs:\PYGZti{}\PYGZdl{} dig www.switch.ch +dnssec +multi @86.119.31.49
+
+; \PYGZlt{}\PYGZlt{}\PYGZgt{}\PYGZgt{} DiG 9.16.1\PYGZhy{}Ubuntu \PYGZlt{}\PYGZlt{}\PYGZgt{}\PYGZgt{} www.switch.ch +dnssec +multi @86.119.31.49
+;; global options: +cmd
+;; Got answer:
+;; \PYGZhy{}\PYGZgt{}\PYGZgt{}HEADER\PYGZlt{}\PYGZlt{}\PYGZhy{} opcode: QUERY, status: NOERROR, id: 56599
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 4, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 4096
+; COOKIE: 507ea15c4294ab7e010000005fb7edaa4e8d4579af166f59 (good)
+;; QUESTION SECTION:
+;www.switch.ch.		IN A
+
+;; ANSWER SECTION:
+www.switch.ch.		300 IN CNAME prod.www.switch.ch.
+www.switch.ch.		300 IN RRSIG CNAME 13 3 300 (
+				20201217220541 20201118050535 65055 switch.ch.
+				N0hi6O/oxBXKxwxZWWGIiJjXs3TbBKSHmae/J45NKFRv
+				Zy3Y2PYidAnF0jwaPhwB/3nk7L3fWLPnc8X95ID8gQ== )
+prod.www.switch.ch.	85430 IN A 130.59.31.80
+prod.www.switch.ch.	85430 IN RRSIG A 13 4 86400 (
+				20201209143817 20201119225302 65055 switch.ch.
+				Tii6rrvbTy9rJq7vPPCkOloAzfN7nKJ6osMf4Vc6I+Ex
+				m6Yq0otPhlcWYZAs9/aGeUZ8HzkOPocV6tJaeibBcw== )
+
+;; Query time: 147 msec
+;; SERVER: 86.119.31.49\PYGZsh{}53(86.119.31.49)
+;; WHEN: Fri Nov 20 17:24:10 CET 2020
+;; MSG SIZE  rcvd: 315
+\end{Verbatim}

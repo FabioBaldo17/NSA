@@ -55,7 +55,7 @@ In order to prevent malicious DNS transfer zone some tips need to be followed. A
 In order to perform the DNS Hijacking attack the hacker needs to be somehow inside the LAN. In this attack, the host's DNS request is intercepted and then an ad hoc responce is send back.
 
 \subsection{Question P5}
-In order to check the result of the attack a basic "hello wold" html page has been hosted using an apache2 server and then during the ettercap configuration the ip set to be send back to the victim has been set to be the one of the "fake page".
+In order to check the result of the attack a basic "hello wold" html page has been hosted using an apache2 server and then during the ettercap configuration the ip to be send back to the victim has been set to be the one of the "fake page".
 Before the attack using the command \scom{nslooup www.google.com} the real ip has been controlled
 
 \inputminted{text}{pre_hijacking.txt}
@@ -68,7 +68,7 @@ then the same command has been entered during the attack resulting in the follow
 \label{conf:during_hijacking}
 
 \subsection{Question P6}
-One of the possible solutions that can partially solve the problem is using filters to mask out the possible malicious DNS answers. Other possible solutions, other than protecting physically and virtually the network, are dependent on the service provider.
+One of the possible solutions that can partially solve the problem is using filters to mask out the possible malicious DNS answers. Other possible solutions, besides protecting physically and virtually the network, are dependent on the service provider.
 
 
 \section{DNS cache poisoning}
@@ -84,7 +84,7 @@ In the following image is presented the scheme used in the attack.
 \end{figure}
 
 \subsection{Question P8 and P9}
-The parameters to set inside the \texttt{netwox} command are  set following the tool manual (\ref{conf:netwox_help}):
+In order to prepare the \texttt{netwox} command the tool manual (\ref{conf:netwox_help}) has been consulted.
 
 \inputminted{text}{netwox_help.txt}
 \Caption{Netwox help 105}
@@ -92,7 +92,7 @@ The parameters to set inside the \texttt{netwox} command are  set following the 
 
 In order to perform the attack at first the hacker need to do an ARPspoofing on the internal line using the command \scom{arpspoof -i eth0 -t 20.0.0.1 20.0.0.17} and \scom{arpspoof -i eth0 -t 20.0.0.17 20.0.0.1} then, while the arpspoofing is done the following command need to be entered \scom{sudo netwox 105 --hostname "www.apple.com" --hostnameip "1.2.3.4" --authns "g2.nsa.itscec-lab.ch" --authnsip "86.119.31.49" -ttl 600 --device eth0 --filter "src host 20.0.0.17"  --spoofip "raw"}
 
-After the command is entered, each time a DNS request is send to the DNS server the hacker intercepts the requests and try to fill the DNS server cache with a wrong IP. This mechanism is visible in the following screenshots of wireshark capture (fig \ref{fig:Wireshark_capture}) and in the response obtained to the DNS request which is reported in the listing (\ref{log:nslookup_command})
+After the command is entered, each time a DNS request is send to the DNS server the hacker intercepts the requests and try to fill the DNS server cache with a wrong IP. This mechanism is visible in the following screenshots of Wireshark capture (fig \ref{fig:Wireshark_capture}) and in the response obtained to the DNS request which is reported in the listing (\ref{log:nslookup_command})
 
 \begin{figure}[H]
 	\centering
@@ -128,11 +128,11 @@ Following the lab guide A3, it has been tested that the each time a registration
 \label{log:DNSSec_RRSIG}
 
 \subsection{Question P12}
-In order to complete the chain of trust needed for the DNSSEC then 
+In order to complete the chain of trust it is needed that the KSK public key is registered to the local Registar,to store a hash of the DNSKEY record at the registry. In fact, every time a resolver is referred to a child zone, the parent zone also provides a DS record. This DS record is how revolvers know that the child zone is DNSSEC-enabled. To check the validity of the child zone’s public KSK, the resolver hashes it and compares it to the DS record from the parent. If they match, the resolver can assume that the public KSK hasn’t been tampered with, which means it can trust all of the records in the child zone. This is how a chain of trust is established in DNSSEC.[\href{https://www.cloudflare.com/dns/dnssec/how-dnssec-works/}{cloudfare}] 
 
 
 \subsection{Question P13}
-In order to validate the DNSSEC configuration different tools have been used because some of the options needed in the \Lcode{dig} command are deprecated (\Lcode{+topdown option is deprecated;; +sigchase option is deprecated;; +trusted-key option is deprecated}). Using the website \href{www.dnsviz.net}{dnsviz} a complete check of the DNS chain is possible. In the following images are reported at first the diagram (\ref{fig:dnsviz capture_P1}, \ref{fig:dnsviz capture_P2}, \ref{fig:dnsviz capture_P3}) and then the box reporting the errors (\ref{fig:dnsviz capture_errors}). Due to an error during the configuration the TTL has been set to a very large number (30 day) which is reported as an error because the information in the cache could lead to an error.
+In order to validate the DNSSEC configuration different tools have been used because some of the options needed in the \Lcode{dig} command are deprecated (\Lcode{+topdown option is deprecated;; +sigchase option is deprecated;; +trusted-key option is deprecated}). Using the website \href{www.dnsviz.net}{dnsviz} a complete check of the DNS chain is possible. In the following images are reported at first the diagram (\ref{fig:dnsviz capture_P1}, \ref{fig:dnsviz capture_P2}, \ref{fig:dnsviz capture_P3}) and then the box reporting the errors (\ref{fig:dnsviz capture_errors}). Due to an error during the configuration (the TTL has been set to a very large number 30 day) the web page reports many errors because the information in the cache could lead to many derived problems.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\linewidth]{images/dnspath1.png}
@@ -158,16 +158,40 @@ In order to validate the DNSSEC configuration different tools have been used bec
 	\label{fig:dnsviz capture_errors}
 \end{figure}
 
-%TODO drill command deprecated options
 
 \subsection{Question P14}
 
-For testing how the server works with a signed page then the following command has been entered \scom{sudo delv +all  @86.119.31.49 www.switch.ch  ANY} and the command output has been
+For testing how the server works with a signed page the following command has been entered \scom{sudo delv +all  @86.119.31.49 www.switch.ch  ANY} and the command output has been 
 
 \inputminted{text}{DNSSec_switch_test.txt}
 \Caption{www.switch.ch test}
 \label{log:DNSSec_switch}
 
-In the output it is visible that at line 2 all the DNS request has been validated.
+For sake of completeness it has been tested also the \Lcode{dig} command entering the following expression \scom{dig www.switch.ch +dnssec +multi +trace @86.119.31.49} with the output of listing (\ref{log:DNSSec_dig_2}) and as well the command \scom{dig www.switch.ch +dnssec +multi @86.119.31.49} where are visible the \Lcode{ad} and \Lcode{do} flags in the output at respectively \refcode{7} and \refcode{10} of listing \ref{log:DNSSec_dig_2}
+
+\inputminted{text}{DNSSec_dig_short.txt}
+\Caption{www.switch.ch dig 1}
+\label{log:DNSSec_dig_1}
+
+\inputminted{text}{DNSSec_dig_long.txt}
+\Caption{www.switch.ch dig 2}
+\label{log:DNSSec_dig_2}
+
+
+In the output it is visible that at \refcode{2} all the DNS request has been validated.
+In addition a Wireshark capture showing the signature added in the responses used in the Chain Of Trust is reported in the following image
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{images/DNSSec_trust_chain.png}
+	\caption{www.switch.com Wireshark capture}
+	\label{fig:DNSSec_wireshark_capture}
+\end{figure}
+
+
 
 \subsection{Question P15}
+The RFC 6698 presents a internet security protocol where a new way of authenticating the TLS clients is presented. The main concept proposed in this paper is that using a binding between the keys and the names in the chain of trust there is no more need for certificate authority all along the TLS authentication process. 
+The RFC 6844 defines the syntax of the Certification Authority Authorization and rules for processing CAA records by certificate issuers.
+
+
+

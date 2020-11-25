@@ -1,0 +1,74 @@
+fabio@fabio-popOs:~$ dig www.switch.ch +dnssec +multi +trace @86.119.31.49
+
+; <<>> DiG 9.16.1-Ubuntu <<>> www.switch.ch +dnssec +multi +trace @86.119.31.49
+;; global options: +cmd
+.			517295 IN NS h.root-servers.net.
+.			517295 IN NS m.root-servers.net.
+.			517295 IN NS f.root-servers.net.
+.			517295 IN NS i.root-servers.net.
+.			517295 IN NS j.root-servers.net.
+.			517295 IN NS d.root-servers.net.
+.			517295 IN NS b.root-servers.net.
+.			517295 IN NS g.root-servers.net.
+.			517295 IN NS c.root-servers.net.
+.			517295 IN NS a.root-servers.net.
+.			517295 IN NS e.root-servers.net.
+.			517295 IN NS k.root-servers.net.
+.			517295 IN NS l.root-servers.net.
+.			517295 IN RRSIG	NS 8 0 518400 (
+				20201203050000 20201120040000 26116 .
+				hG1ePIDLJjtXxbrfeYwRpHjP97Y+wPaMSzmhUgAijkRT
+				2xDaP39L9YFCWzWEXTe5aPqASR7oNPlCFCiJENxP2GJA
+				/6JEBlcb2kG/kNdXE0jjjhcd51zMWEp9BYr+WSquYIMi
+				WSQFcCwYeN5Px6fSqbFnwONWMUJLNlQqzVupmxeZGxOR
+				Ta+3IVh0MPO2wAa3wT9087FCgyXngvxSkd1nN+Czqkky
+				c45zO3JAAjJzDSnvGABVBZ5pUbxmx+9XPyqYXAV9aKHN
+				dV/lvy6YXl94UafwF2gaPUw5h4hVvhpgOExxQYxXZd45
+				l2b6J94zcjlOwvXIrtpPWVwElOZbCFPeQA== )
+;; Received 1137 bytes from 86.119.31.49#53(86.119.31.49) in 211 ms
+
+ch.			172800 IN NS a.nic.ch.
+ch.			172800 IN NS b.nic.ch.
+ch.			172800 IN NS c.nic.ch.
+ch.			172800 IN NS e.nic.ch.
+ch.			172800 IN NS f.nic.ch.
+ch.			172800 IN NS g.nic.ch.
+ch.			172800 IN NS h.nic.ch.
+ch.			86400 IN DS 1053 13 2 (
+				94D834BEF7536BFE6ECB4682E1151BDD4882CA12C6DB
+				2C1AA64CB0E9D4DA5222 )
+ch.			86400 IN RRSIG DS 8 1 86400 (
+				20201203050000 20201120040000 26116 .
+				iN0A2kOLGsBCwBQQ/LZpIf87NvM7WnFHDUw11Ix4m4BD
+				r8Lfym0SEzaY6rERduuj8JxKXHdTv/1MjVJHav2Cl1h/
+				ctN/WOtN51/wMmDfboIzBPeeSvF6WVIeOhtcSFJQzvNR
+				z2Rrc6N23HYxwca8e2JU6GqjmJJ8bg++GfXLs5QYMnNX
+				YZL42uEKTtURPAsgwmE4dc5dtFFNXRbLpplaS7fwllii
+				747XNLeRrIPAt7FmItkI1GRdI9J/Axis0DttUKADTQ9F
+				mZEVxqH4VHoZioau+CVgigPYirvRs2YGDJOrGoJclx/N
+				ypaD6AD6YVM91fZLtIziassrq/LpsP6PXA== )
+;; Received 801 bytes from 199.7.83.42#53(l.root-servers.net) in 195 ms
+
+switch.ch.		3600 IN	NS ns2.switch.ch.
+switch.ch.		3600 IN	NS ns3.switch.ch.
+switch.ch.		3600 IN	NS scsnms.switch.ch.
+switch.ch.		3600 IN	DS 41243 13 2 (
+				7EB1BDE852B56AF1FB24B7018764BFA34D1E6A2A02F1
+				338A40EF0A77430F5607 )
+switch.ch.		3600 IN	RRSIG DS 13 2 3600 (
+				20201215124715 20201115120219 32817 ch.
+				miH8JbYcKKs2AAyFp3SMKdOSg17PnJ/UJc1W92XO4kal
+				g+6Q7HboiTkh8n9JZtZbEiPrer5fqgvmA19rEImVnQ== )
+;; Received 404 bytes from 194.0.1.40#53(g.nic.ch) in 143 ms
+
+www.switch.ch.		300 IN CNAME prod.www.switch.ch.
+www.switch.ch.		300 IN RRSIG CNAME 13 3 300 (
+				20201217220541 20201118050535 65055 switch.ch.
+				N0hi6O/oxBXKxwxZWWGIiJjXs3TbBKSHmae/J45NKFRv
+				Zy3Y2PYidAnF0jwaPhwB/3nk7L3fWLPnc8X95ID8gQ== )
+prod.www.switch.ch.	86400 IN A 130.59.31.80
+prod.www.switch.ch.	86400 IN RRSIG A 13 4 86400 (
+				20201209143817 20201119225302 65055 switch.ch.
+				Tii6rrvbTy9rJq7vPPCkOloAzfN7nKJ6osMf4Vc6I+Ex
+				m6Yq0otPhlcWYZAs9/aGeUZ8HzkOPocV6tJaeibBcw== )
+;; Received 315 bytes from 130.59.31.26#53(scsnms.switch.ch) in 135 ms
