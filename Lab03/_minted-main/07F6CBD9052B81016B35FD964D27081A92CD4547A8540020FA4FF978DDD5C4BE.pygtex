@@ -1,0 +1,34 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+HostC\PYGZsh{} nmap 209.165.200.226
+Starting Nmap 7.91 ( https://nmap.org ) at 2020\PYGZhy{}12\PYGZhy{}03 23:33 UTC
+mass\PYGZus{}dns: warning: Unable to determine any DNS servers. Reverse DNS is disabled. Try using \PYGZhy{}\PYGZhy{}system\PYGZhy{}dns or specify valid servers with \PYGZhy{}\PYGZhy{}dns\PYGZhy{}servers
+Nmap scan report for 209.165.200.226
+Host is up (0.014s latency).
+Not shown: 999 filtered ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+
+Nmap done: 1 IP address (1 host up) scanned in 4.61 seconds
+
+HostC\PYGZsh{} nmap \PYGZhy{}sA 209.165.200.226
+Starting Nmap 7.91 ( https://nmap.org ) at 2020\PYGZhy{}12\PYGZhy{}03 23:29 UTC
+Nmap scan report for 209.165.200.226
+Host is up (0.012s latency).
+All 1000 scanned ports on 209.165.200.226 are filtered
+
+Nmap done: 1 IP address (1 host up) scanned in 21.15 seconds
+
+HostC\PYGZsh{} nmap \PYGZhy{}Pn 192.168.20.10
+Nmap scan report for 192.168.20.10
+Host is up (0.018s latency).
+All 1000 scanned ports on 192.168.20.10 are filtered
+
+Nmap done: 1 IP address (1 host up) scanned in 1.73 seconds
+
+HostC\PYGZsh{} nmap \PYGZhy{}Pn 192.168.10.11
+Nmap scan report for 192.168.10.11
+Host is up (0.012s latency).
+All 1000 scanned ports on 192.168.10.11 are filtered
+
+Nmap done: 1 IP address (1 host up) scanned in 1.74 seconds
+\end{Verbatim}

@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+ASA\PYGZsh{} show run object
+object network inside\PYGZhy{}net
+ subnet 192.168.10.0 255.255.255.0
+ASA\PYGZsh{} show run nat   
+!
+object network inside\PYGZhy{}net
+ nat (inside,outside) dynamic interface
+\end{Verbatim}

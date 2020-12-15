@@ -1,0 +1,7 @@
+ASA# show run object
+object network inside-net
+ subnet 192.168.10.0 255.255.255.0
+ASA# show run nat   
+!
+object network inside-net
+ nat (inside,outside) dynamic interface

@@ -1,0 +1,41 @@
+root@Host1:~# ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+13: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UNKNOWN group default qlen 1000
+    link/ether 6a:94:ca:7f:14:e3 brd ff:ff:ff:ff:ff:ff
+    inet6 2012:6be6:266c:6a15:6894:caff:fe7f:14e3/64 scope global tentative mngtmpaddr dynamic 
+       valid_lft 130789sec preferred_lft 130789sec
+    inet6 2012:6be5:246c:6a15:6894:caff:fe7f:14e3/64 scope global tentative mngtmpaddr dynamic 
+       valid_lft 130789sec preferred_lft 130789sec
+    inet6 2012:6be4:226c:6a15:6894:caff:fe7f:14e3/64 scope global tentative mngtmpaddr dynamic 
+       valid_lft 130789sec preferred_lft 130789sec
+    inet6 2012:6be3:206c:6a15:6894:caff:fe7f:14e3/64 scope global tentative mngtmpaddr dynamic 
+       valid_lft 130789sec preferred_lft 130789sec
+    inet6 2012:6be2:1e6c:6a15:6894:caff:fe7f:14e3/64 scope global tentative mngtmpaddr dynamic 
+       valid_lft 130789sec preferred_lft 130789sec
+    inet6 2012:6be1:1c6c:6a15:6894:caff:fe7f:14e3/64 scope global tentative mngtmpaddr dynamic 
+       valid_lft 130789sec preferred_lft 130789sec
+    inet6 2012:6be0:1a6c:6a15:6894:caff:fe7f:14e3/64 scope global tentative mngtmpaddr dynamic 
+       valid_lft 130789sec preferred_lft 130789sec
+    inet6 2012:6bdf:186c:6a15:6894:caff:fe7f:14e3/64 scope global tentative mngtmpaddr dynamic 
+       valid_lft 130789sec preferred_lft 130789sec
+    inet6 2012:6bde:166c:6a15:6894:caff:fe7f:14e3/64 scope global tentative mngtmpaddr dynamic 
+       valid_lft 130789sec preferred_lft 130789sec
+    inet6 2012:6bdd:146c:6a15:6894:caff:fe7f:14e3/64 scope global tentative mngtmpaddr dynamic 
+       valid_lft 130789sec preferred_lft 130789sec
+    inet6 2012:6bdc:126c:6a15:6894:caff:fe7f:14e3/64 scope global tentative mngtmpaddr dynamic 
+       valid_lft 130789sec preferred_lft 130789sec
+    inet6 2012:6bdb:106c:6a15:6894:caff:fe7f:14e3/64 scope global tentative mngtmpaddr dynamic 
+       valid_lft 130789sec preferred_lft 130789sec
+    inet6 2012:6bda:e6c:6a15:6894:caff:fe7f:14e3/64 scope global tentative mngtmpaddr dynamic 
+       valid_lft 130789sec preferred_lft 130789sec
+    inet6 2012:6bd9:c6c:6a15:6894:caff:fe7f:14e3/64 scope global tentative mngtmpaddr dynamic 
+       valid_lft 130789sec preferred_lft 130789sec
+    inet6 2001:620:40b:beaf:6894:caff:fe7f:14e3/64 scope global mngtmpaddr dynamic 
+       valid_lft 2591891sec preferred_lft 604691sec
+    inet6 fe80::6894:caff:fe7f:14e3/64 scope link 
+       valid_lft forever preferred_lft forever

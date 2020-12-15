@@ -1,0 +1,29 @@
+R1#show ipv6 route
+IPv6 Routing Table - default - 3 entries
+Codes: C - Connected, L - Local, S - Static, U - Per-user Static route
+       B - BGP, HA - Home Agent, MR - Mobile Router, R - RIP
+       I1 - ISIS L1, I2 - ISIS L2, IA - ISIS interarea, IS - ISIS summary
+       D - EIGRP, EX - EIGRP external, ND - Neighbor Discovery, l - LISP
+       O - OSPF Intra, OI - OSPF Inter, OE1 - OSPF ext 1, OE2 - OSPF ext 2
+       ON1 - OSPF NSSA ext 1, ON2 - OSPF NSSA ext 2
+C   2001:620:40B:BEAF::/64 [0/0]
+     via FastEthernet0/0, directly connected
+L   2001:620:40B:BEAF::1/128 [0/0]
+     via FastEthernet0/0, receive
+
+---------------------------------------------------
+
+R2#show ipv6 route
+IPv6 Routing Table - default - 3 entries
+Codes: C - Connected, L - Local, S - Static, U - Per-user Static route
+       B - BGP, HA - Home Agent, MR - Mobile Router, R - RIP
+       I1 - ISIS L1, I2 - ISIS L2, IA - ISIS interarea, IS - ISIS summary
+       D - EIGRP, EX - EIGRP external, ND - Neighbor Discovery, l - LISP
+       O - OSPF Intra, OI - OSPF Inter, OE1 - OSPF ext 1, OE2 - OSPF ext 2
+       ON1 - OSPF NSSA ext 1, ON2 - OSPF NSSA ext 2
+C   2001:620:40B:CAFE::/64 [0/0]
+     via FastEthernet1/0, directly connected
+L   2001:620:40B:CAFE::2/128 [0/0]
+     via FastEthernet1/0, receive
+
+

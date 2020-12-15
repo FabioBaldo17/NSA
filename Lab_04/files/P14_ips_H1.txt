@@ -1,0 +1,26 @@
+root@Host1:~# ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+11: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UNKNOWN group default qlen 1000
+    link/ether a6:15:9a:e6:94:55 brd ff:ff:ff:ff:ff:ff
+    inet6 2a01:fce:cc67:2263:a415:9aff:fee6:9455/64 scope global mngtmpaddr dynamic 
+       valid_lft forever preferred_lft forever
+    inet6 2a01:8f71:c0f3:1533:a415:9aff:fee6:9455/64 scope global mngtmpaddr dynamic 
+       valid_lft forever preferred_lft forever
+    inet6 2a01:5f42:f89b:6fbc:a415:9aff:fee6:9455/64 scope global mngtmpaddr dynamic 
+       valid_lft forever preferred_lft forever
+    inet6 2a01:2f84:5753:9702:a415:9aff:fee6:9455/64 scope global mngtmpaddr dynamic 
+       valid_lft forever preferred_lft forever
+    inet6 2a01:3821:63a4:730a:a415:9aff:fee6:9455/64 scope global mngtmpaddr dynamic 
+       valid_lft forever preferred_lft forever
+    inet6 2a01:660d:3c2d:c3f3:a415:9aff:fee6:9455/64 scope global mngtmpaddr dynamic 
+...
+    inet6 2001:620:40b:beaf:a415:9aff:fee6:9455/64 scope global mngtmpaddr dynamic 
+       valid_lft 2591841sec preferred_lft 604641sec
+    inet6 fe80::a415:9aff:fee6:9455/64 scope link 
+       valid_lft forever preferred_lft forever
+

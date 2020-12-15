@@ -1,0 +1,32 @@
+root@Host1:~# ip neighbor
+2001:620:40b:beaf:d5e9:8984:6503:e46a dev eth0 lladdr 00:50:56:c0:00:02 STALE
+fe80::10 dev eth0 lladdr ca:01:0a:ed:00:00 router STALE
+2001:620:40b:beaf:782b:fdff:fed7:eabb dev eth0 lladdr 7a:2b:fd:d7:ea:bb STALE
+fe80::250:56ff:fec0:2 dev eth0 lladdr 00:50:56:c0:00:02 STALE
+fe80::782b:fdff:fed7:eabb dev eth0 lladdr 7a:2b:fd:d7:ea:bb STALE
+-------------------------------------------------------------------------------
+root@Host2:~# ip neighbor
+fe80::10 dev eth0 lladdr ca:01:0a:ed:00:00 router STALE
+fe80::11 dev eth0  FAILED
+fe80::250:56ff:fec0:2 dev eth0 lladdr 00:50:56:c0:00:02 STALE
+2001:620:40b:beaf:d5e9:8984:6503:e46a dev eth0 lladdr 00:50:56:c0:00:02 STALE
+fe80::a415:9aff:fee6:9455 dev eth0 lladdr a6:15:9a:e6:94:55 STALE
+2001:620:40b:beaf:a415:9aff:fee6:9455 dev eth0 lladdr a6:15:9a:e6:94:55 STALE
+fe80::1 dev eth0  FAILED
+2001:620:40b:beaf::1 dev eth0 lladdr ca:01:0a:ed:00:00 router STALE
+-------------------------------------------------------------------------------
+root@Host3:~# ip neighbor
+fe80::13 dev eth0 lladdr ca:02:0e:31:00:00 router DELAY
+2001:620:40b:dead::2 dev eth0 lladdr ca:02:0e:31:00:00 router REACHABLE
+-------------------------------------------------------------------------------
+R1#show ipv6 neighbors 
+IPv6 Address                              Age Link-layer Addr State Interface
+FE80::20C:29FF:FE25:257D                   94 000c.2925.257d  STALE Fa0/0
+2001:620:40B:BEAF:D5E9:8984:6503:E46A       5 0050.56c0.0002  STALE Fa0/0
+FE80::250:56FF:FEC0:2                       5 0050.56c0.0002  STALE Fa0/0
+-------------------------------------------------------------------------------
+R2#  show ipv6 neighbors 
+IPv6 Address                              Age Link-layer Addr State Interface
+2001:620:40B:DEAD:874:36FF:FE01:212C        6 0a74.3601.212c  STALE Fa0/0
+FE80::874:36FF:FE01:212C                    6 0a74.3601.212c  STALE Fa0/0
+

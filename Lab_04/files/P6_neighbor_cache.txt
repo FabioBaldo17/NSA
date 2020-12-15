@@ -1,0 +1,9 @@
+root@Host2:~# ip -6 neighbor show
+fe80::10 dev eth0 lladdr ca:01:0a:ed:00:00 router STALE
+fe80::11 dev eth0  FAILED
+fe80::250:56ff:fec0:2 dev eth0 lladdr 00:50:56:c0:00:02 STALE
+2001:620:40b:beaf:d5e9:8984:6503:e46a dev eth0 lladdr 00:50:56:c0:00:02 STALE
+fe80::a415:9aff:fee6:9455 dev eth0 lladdr a6:15:9a:e6:94:55 STALE
+2001:620:40b:beaf:a415:9aff:fee6:9455 dev eth0 lladdr a6:15:9a:e6:94:55 STALE
+fe80::1 dev eth0  FAILED
+2001:620:40b:beaf::1 dev eth0 lladdr ca:01:0a:ed:00:00 router STALE

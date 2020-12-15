@@ -1,0 +1,23 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+root@Host1:\PYGZti{}\PYGZsh{} ip neighbor
+fe80::218:e6ff:fefe:8edd dev eth0  INCOMPLETE
+fe80::10 dev eth0 lladdr ca:01:0a:ed:00:00 router REACHABLE
+2001:620:40b:beaf:d5e9:8984:6503:e46a dev eth0  INCOMPLETE
+root@Host1:\PYGZti{}\PYGZsh{} ip neighbor
+fe80::1d:10fb:945f:401 dev eth0 lladdr 00:0c:fb:94:5f:04 router STALE
+fe80::1d:1092:ad49:401 dev eth0 lladdr 00:0c:92:ad:49:04 router STALE
+fe80::1d:10a4:489d:301 dev eth0 lladdr 00:0c:a4:48:9d:03 router STALE
+fe80::1d:102d:56a0:301 dev eth0 lladdr 00:0c:2d:56:a0:03 router STALE
+fe80::1d:10be:a25b:401 dev eth0 lladdr 00:0c:be:a2:5b:04 router STALE
+fe80::1d:10f7:1813:401 dev eth0 lladdr 00:0c:f7:18:13:04 router STALE
+fe80::1d:10a3:cfe3:301 dev eth0 lladdr 00:0c:a3:cf:e3:03 router STALE
+...
+fe80::1d:108c:b8de:301 dev eth0 lladdr 00:0c:8c:b8:de:03 router STALE
+fe80::1d:1034:8404:401 dev eth0 lladdr 00:0c:34:84:04:04 router STALE
+fe80::1d:107a:c24c:401 dev eth0 lladdr 00:0c:7a:c2:4c:04 router STALE
+fe80::1d:10ef:b14e:401 dev eth0 lladdr 00:0c:ef:b1:4e:04 router STALE
+fe80::1d:1035:7da4:301 dev eth0 lladdr 00:0c:35:7d:a4:03 router STALE
+fe80::1d:10a8:fa4c:401 dev eth0 lladdr 00:0c:a8:fa:4c:04 router STALE
+fe80::1d:107e:52b9:301 dev eth0 lladdr 00:0c:7e:52:b9:03 router STALE
+fe80::1d:10fc:17a9:301 dev eth0 lladdr 00:0c:fc:17:a9:03 router STALE
+\end{Verbatim}

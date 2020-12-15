@@ -1,0 +1,29 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+R1\PYGZsh{}show ipv6 route
+IPv6 Routing Table \PYGZhy{} default \PYGZhy{} 3 entries
+Codes: C \PYGZhy{} Connected, L \PYGZhy{} Local, S \PYGZhy{} Static, U \PYGZhy{} Per\PYGZhy{}user Static route
+       B \PYGZhy{} BGP, HA \PYGZhy{} Home Agent, MR \PYGZhy{} Mobile Router, R \PYGZhy{} RIP
+       I1 \PYGZhy{} ISIS L1, I2 \PYGZhy{} ISIS L2, IA \PYGZhy{} ISIS interarea, IS \PYGZhy{} ISIS summary
+       D \PYGZhy{} EIGRP, EX \PYGZhy{} EIGRP external, ND \PYGZhy{} Neighbor Discovery, l \PYGZhy{} LISP
+       O \PYGZhy{} OSPF Intra, OI \PYGZhy{} OSPF Inter, OE1 \PYGZhy{} OSPF ext 1, OE2 \PYGZhy{} OSPF ext 2
+       ON1 \PYGZhy{} OSPF NSSA ext 1, ON2 \PYGZhy{} OSPF NSSA ext 2
+C   2001:620:40B:BEAF::/64 [0/0]
+     via FastEthernet0/0, directly connected
+L   2001:620:40B:BEAF::1/128 [0/0]
+     via FastEthernet0/0, receive
+
+\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}
+
+R2\PYGZsh{}show ipv6 route
+IPv6 Routing Table \PYGZhy{} default \PYGZhy{} 3 entries
+Codes: C \PYGZhy{} Connected, L \PYGZhy{} Local, S \PYGZhy{} Static, U \PYGZhy{} Per\PYGZhy{}user Static route
+       B \PYGZhy{} BGP, HA \PYGZhy{} Home Agent, MR \PYGZhy{} Mobile Router, R \PYGZhy{} RIP
+       I1 \PYGZhy{} ISIS L1, I2 \PYGZhy{} ISIS L2, IA \PYGZhy{} ISIS interarea, IS \PYGZhy{} ISIS summary
+       D \PYGZhy{} EIGRP, EX \PYGZhy{} EIGRP external, ND \PYGZhy{} Neighbor Discovery, l \PYGZhy{} LISP
+       O \PYGZhy{} OSPF Intra, OI \PYGZhy{} OSPF Inter, OE1 \PYGZhy{} OSPF ext 1, OE2 \PYGZhy{} OSPF ext 2
+       ON1 \PYGZhy{} OSPF NSSA ext 1, ON2 \PYGZhy{} OSPF NSSA ext 2
+C   2001:620:40B:CAFE::/64 [0/0]
+     via FastEthernet1/0, directly connected
+L   2001:620:40B:CAFE::2/128 [0/0]
+     via FastEthernet1/0, receive
+\end{Verbatim}
